@@ -1,1 +1,86 @@
 @import "tailwindcss";
+
+/* Custom Fonts */
+
+/* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Themes */
+@theme {
+    /* Poppins */
+    --font-family-poppins: 'Poppins', sans-serif;
+    --font-weight-poppins-regular: 400;
+    --font-weight-poppins-light: 300;
+    --font-weight-poppins-extralight: 200;
+    --font-weight-poppins-medium: 500;
+
+    /* Gilroy */
+    --font-family-gilroy: 'Gilroy', sans-serif;
+    --font-weight-gilroy-regular: 400;
+    --font-weight-gilroy-light: 300;
+    --font-weight-gilroy-semibold: 600;
+    --font-weight-gilroy-medium: 500;
+    --font-weight-gilroy-thin: 100;
+}
