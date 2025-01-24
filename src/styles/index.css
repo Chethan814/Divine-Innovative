@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom Fonts */
+/* Custom Fonts for Tailwind css V4 */
 
 /* Poppins */
 @font-face {
@@ -68,7 +68,7 @@
 }
 
 /* Themes */
-@theme {
+:root {
     /* Poppins */
     --font-family-poppins: 'Poppins', sans-serif;
     --font-weight-poppins-regular: 400;
