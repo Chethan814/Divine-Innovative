@@ -1,21 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./styles/index.css";
 
-import HeroSection from "./components/Hero/Hero";
-import './styles/index.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
+// Pages
+import Home from './pages/home.jsx'
+import Aboutus from './pages/Aboutus.jsx'
+import Services from "./pages/Services/Services.jsx"
+import Design from "./pages/Services/Design.jsx"
+import Development from "./pages/Services/Development.jsx"
+import Management from "./pages/Services/Management.jsx"
 
 function App() {
     return (
         <>
-            {/* <div className="font-[Gilroy]">
-                <h1 className="font-[500]">Welcome to My Portfolio</h1>
-                <p className="font-[400]">
-                    This is a paragraph with Poppins font.
-                </p>
-            </div> */}
-            <HeroSection />
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/aboutus" element={<Aboutus />} />
+                </Routes>
+            </Router>
+            
         </>
     );
 }
