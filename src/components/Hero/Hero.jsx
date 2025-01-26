@@ -7,7 +7,7 @@ import Minimalistic from "../Design/Minimalistic";
 export default function HeroSection(){
     return (
         <>
-        <div className="w-[95vw] mx-auto bg-[#ffffff] flex  justify-center">
+        <div className="w-[95vw] mx-auto bg-[#ffffff] flex  justify-center select-none">
                <NavBar/>
                <HeroConetent />
                <Minimalistic />
