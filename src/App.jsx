@@ -2,6 +2,8 @@ import React from "react";
 
 import HeroSection from "./components/Hero/Hero";
 import './styles/index.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 function App() {

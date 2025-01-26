@@ -1,0 +1,5 @@
+/* Webkit Text Stroke Class */
+.text-stroke {
+    -webkit-text-stroke: 1.4px black; /* Adjust the width and color as needed */
+    color: transparent; /* This makes the fill color transparent */
+}
