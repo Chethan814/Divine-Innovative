@@ -9,7 +9,7 @@ export default function HeroConetent() {
     return (
         <>
             <div
-                className="w-[45vw] p-4 my-10 rounded-4xl translate-y-20 "
+                className="w-[45vw] p-4 my-10 rounded-4xl translate-y-20 select-none "
                 id="hero-content"
             >
                 <div className="mt-20 ml-14">
