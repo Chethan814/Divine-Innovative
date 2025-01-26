@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom Fonts for Tailwind css V4 */
+/* Custom Fonts for Tailwind CSS V4 */
 
 /* Poppins */
 @font-face {
@@ -78,9 +78,54 @@
 
     /* Gilroy */
     --font-family-gilroy: 'Gilroy', sans-serif;
-    --font-weight-gilroy-regular: 400;
-    --font-weight-gilroy-light: 300;
     --font-weight-gilroy-semibold: 600;
     --font-weight-gilroy-medium: 500;
+    --font-weight-gilroy-regular: 400;
+    --font-weight-gilroy-light: 300;
     --font-weight-gilroy-thin: 100;
+}
+
+/* Font Classes */
+.font-poppins {
+    font-family: var(--font-family-poppins);
+}
+
+.font-gilroy {
+    font-family: var(--font-family-gilroy);
+}
+
+.font-poppins-regular {
+    font-weight: var(--font-weight-poppins-regular);
+}
+
+.font-poppins-light {
+    font-weight: var(--font-weight-poppins-light);
+}
+
+.font-poppins-extralight {
+    font-weight: var(--font-weight-poppins-extralight);
+}
+
+.font-poppins-medium {
+    font-weight: var(--font-weight-poppins-medium);
+}
+
+.font-gilroy-regular {
+    font-weight: var(--font-weight-gilroy-regular);
+}
+
+.font-gilroy-light {
+    font-weight: var(--font-weight-gilroy-light);
+}
+
+.font-gilroy-semibold {
+    font-weight: var(--font-weight-gilroy-semibold);
+}
+
+.font-gilroy-medium {
+    font-weight: var(--font-weight-gilroy-medium);
+}
+
+.font-gilroy-thin {
+    font-weight: var(--font-weight-gilroy-thin);
 }
