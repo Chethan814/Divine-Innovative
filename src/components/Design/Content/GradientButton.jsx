@@ -10,6 +10,9 @@ const GradientButton = (props) => {
     borderRadius: '5px',
     cursor: 'pointer',
   };
+  if(!props.button){
+    return <></>
+  }
 
   return (
     <button className='font-poppins font-normal text-[22px] mt-8 w-[13vw] h-[3.4rem] transition hover:scale-105 ' style={buttonStyle}>

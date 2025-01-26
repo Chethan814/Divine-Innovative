@@ -6,7 +6,7 @@ import HeadingPara from "./Content/HeadingPara";
 import HeroCard from "./Content/HeroCard";
 import Rights from "./Content/Rights";
 
-export default function HeroContent() {
+export default function HeroContent(props) {
     return (
         <>
             <div
@@ -16,22 +16,21 @@ export default function HeroContent() {
                 <div className="mt-20 ml-14">
                     <div>
                         <HeadingPara
-                            heading="About Us"
-                            hMain={false}
-                            para="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden." 
-                            pMain={false}
+                            heading={props.h1}
+                            hMain={props.main}
+                            para={props.p}
+                            pMain={props.main}
                         />
                         <div>
                             <GradientButton 
-                            txt={'Get in Touch'} 
-                            GIT={false}
-                            button={true}
+                            GIT={props.buttonGIT}
+                            button={props.button}
                             />
                         </div>
                     </div>
                 </div>
-                <HeroCard requied={false} />
-                <Rights rMain={false} />
+                <HeroCard requied={props.main} />
+                <Rights rMain={props.main} />
 
             </div>
         </>
