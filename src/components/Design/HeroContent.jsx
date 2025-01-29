@@ -10,10 +10,10 @@ export default function HeroContent(props) {
     return (
         <>
             <div
-                className="w-[45vw] p-4 my-10 rounded-4xl translate-y-20 select-none"
+                className="w-[90vw] xl:w-[50vw] 2xl:w-[40rem] xl:p-4 xl:pl-20 mx-auto xl:mt-24 xl:my-15 "
                 id="hero-content"
             >
-                <div className="mt-20 ml-14">
+                <div className="">
                     <div>
                         <HeadingPara
                             heading={props.h1}
@@ -27,10 +27,13 @@ export default function HeroContent(props) {
                             button={props.button}
                             />
                         </div>
+                        <div>
+                        <HeroCard requied={props.main} />
+                        <Rights rMain={props.main} />
+                        </div>
                     </div>
                 </div>
-                <HeroCard requied={props.main} />
-                <Rights rMain={props.main} />
+                
 
             </div>
         </>

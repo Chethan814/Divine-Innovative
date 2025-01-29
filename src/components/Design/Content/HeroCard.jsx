@@ -26,7 +26,7 @@ export default function HeroCard(props) {
     }
     return (
         <>
-            <div className="mt-35">
+            <div className="xl:mt-35">
                 <div className="flex justify-evenly">
                     <HeroCarditems
                         logo={logo1}

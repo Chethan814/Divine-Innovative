@@ -6,7 +6,7 @@ export default function HeadingPara(props) {
     return (
         <>
             <div>
-                <h1 className={` ${props.hMain ? " font-gilroy-semibold text-7xl leading-20 "  : " font-gilroy font-bold text-8xl text-stroke mt-30 "}    `}  >
+                <h1 className={`text-4xl mt-20  ${props.hMain ? " font-gilroy-semibold xl:text-7xl  xl:leading-20 "  : " font-gilroy font-bold xl:text-8xl text-stroke xl:mt-30 "}    `}  >
                     {props.heading}
                 </h1>
             </div>
