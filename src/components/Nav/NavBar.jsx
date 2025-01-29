@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "../../../public/asstes/Logo/logo.png";
+import Logo from "/asstes/Logo/logo.png";
 import { Navigate, NavLink } from "react-router-dom";
 
 export default function NavBar() {
     return (
         <>
             <div
-                className=" w-[98vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 mx-auto xl:ml-8 xl:pl-2 flex items-center justify-around 2xl:justify-around "
+                className=" w-[85vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 mx-auto xl:ml-8 xl:pl-2 flex items-center justify-around 2xl:justify-around "
                 id="nav-bar"
             >
                 <div>
@@ -21,7 +21,7 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 <div>
-                    <ul className="  w-57 flex items-center justify-between xl:gap-16 xl:2xl:gap- xl:pr-8 xl:translate-y-[0.1rem] || font-gilroy-light xl:text-[1.35rem] ">
+                    <ul className="w-57 flex items-center justify-between xl:gap-16 xl:2xl:gap- xl:pr-8  xl:translate-y-[0.1rem]  font-gilroy-light text-[0.999rem] xl:text-[1.35rem] ">
                         <li>
                             <NavLink to="/aboutus ">About us</NavLink>{" "}
                         </li>
