@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowULeftDown from "../../../../public/asstes/icons/ArrowULeftDown.png";
+import ArrowULeftDown from "/asstes/icons/ArrowULeftDown.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons';
 
