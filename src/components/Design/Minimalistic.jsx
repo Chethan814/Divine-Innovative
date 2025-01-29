@@ -1,15 +1,15 @@
 import React from "react";
 
-import Effect from "../../../public/asstes/hero-section/effects.png";
-import gradient from "../../../public/asstes/hero-section/gradient_2.png";
-import icon1 from "../../../public/asstes/hero-section/shaps/svg/Ornament1.svg";
-import icon2 from "../../../public/asstes/hero-section/shaps/svg/Ornament2.svg";
-import icon3 from "../../../public/asstes/hero-section/shaps/svg/Ornament3.svg";
-import icon4 from "../../../public/asstes/hero-section/shaps/svg/Ornament4.svg";
-import icon5 from "../../../public/asstes/hero-section/shaps/svg/Ornament5.svg";
-import icon6 from "../../../public/asstes/hero-section/shaps/svg/Ornament6.svg";
-import icon7 from "../../../public/asstes/hero-section/shaps/svg/Ornament7.svg";
-import icon8 from "../../../public/asstes/hero-section/shaps/svg/Ornament8.svg";
+import Effect from "/asstes/hero-section/effects.png";
+import gradient from "/asstes/hero-section/gradient_2.png";
+import icon1 from "/asstes/hero-section/shaps/svg/Ornament1.svg";
+import icon2 from "/asstes/hero-section/shaps/svg/Ornament2.svg";
+import icon3 from "/asstes/hero-section/shaps/svg/Ornament3.svg";
+import icon4 from "/asstes/hero-section/shaps/svg/Ornament4.svg";
+import icon5 from "/asstes/hero-section/shaps/svg/Ornament5.svg";
+import icon6 from "/asstes/hero-section/shaps/svg/Ornament6.svg";
+import icon7 from "/asstes/hero-section/shaps/svg/Ornament7.svg";
+import icon8 from "/asstes/hero-section/shaps/svg/Ornament8.svg";
 
 export default function Minimalistic(){
     return (

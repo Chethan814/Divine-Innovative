@@ -1,7 +1,7 @@
 import React from "react";
 
-import logo1 from "../../../../public/asstes/icons/Identity.png";
-import logo2 from "../../../../public/asstes/icons/CircleWavyCheck.png";
+import logo1 from "/asstes/icons/Identity.png";
+import logo2 from "/asstes/icons/CircleWavyCheck.png";
 
 const HeroCarditems = ({ logo, title, description }) => {
     return (
