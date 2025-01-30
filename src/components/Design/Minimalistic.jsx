@@ -14,7 +14,7 @@ import icon8 from "/asstes/hero-section/shaps/svg/Ornament8.svg";
 export default function Minimalistic(){
     return (
         <>
-        <div className="hidden xl:w-[43vw] 2xl:w-[47rem] xl:h-[150vh] 2xl:h-[72rem]  xl:mx-8 xl:my-10 rounded-4xl translate-x-4 p-1  " id="Minimalistic-design">
+        <div className="hidden sm:block xl:w-[43vw] 2xl:w-[47rem] xl:h-[150vh] 2xl:h-[72rem]  xl:mx-8 xl:my-10 rounded-4xl translate-x-4 p-1  " id="Minimalistic-design">
                     <div>
                         <div className="absolute">
                             <img
