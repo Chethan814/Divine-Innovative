@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <>
             <div
-                className=" w-[85vw] sm:w-[45vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 mx-auto sm:mx-0 sm:mt-12 xl:ml-8 xl:pl-2 flex items-center justify-around 2xl:justify-around "
+                className=" w-[85vw] sm:w-[45vw] md:w-[40vw] lg:w-[45vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 mx-auto sm:mx-0 sm:mt-12 lg:px-4 xl:ml-8 xl:pl-2 flex items-center justify-around lg:justify-between  2xl:justify-around "
                 id="nav-bar"
             >
                 <div>
@@ -14,14 +14,14 @@ export default function NavBar() {
                         <div>
                             <img src={Logo} alt="Logo" className="w-10 sm:w-12  xl:w-18" />
                         </div>
-                        <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem]">
-                            <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem] ">D</span>ivine
+                        <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem] lg:leading-5 lg:pl-2">
+                            <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem] ">D</span>ivine <br />
                             <span className="text-[1.3rem] md:text-[1.4rem] xl:text-[1.8rem]">I</span>nnovative
                         </div>
                     </NavLink>
                 </div>
                 <div>
-                    <ul className="w-57 xl:w- flex items-center justify-between xl:gap-20 2xl:gap- xl:pr-8  xl:translate-y-[0.1rem]  font-gilroy-light text-[0.999rem] xl:text-[1.35rem] ">
+                    <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between lg:gap-18 xl:gap-20 2xl:gap- xl:pr-8  xl:translate-y-[0.1rem]  font-gilroy-light text-[0.999rem] xl:text-[1.35rem] ">
                         <li>
                             <NavLink to="/aboutus ">About us</NavLink>{" "}
                         </li>
@@ -32,8 +32,8 @@ export default function NavBar() {
                             <NavLink to="/Portfolio">Portfolio</NavLink>
                         </li>
                     </ul>
-                    <hr className="hidden xl:block text-black rotate-90 w-9 translate-x-23 -translate-y-3 rounded-2xl" />
-                    <hr className="hidden xl:block text-black rotate-90 w-9 translate-x-58 -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-20 -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-52 -translate-y-3 rounded-2xl" />
                 </div>
             </div>
         </>
