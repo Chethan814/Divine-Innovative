@@ -10,8 +10,8 @@ export default function HeadingPara(props) {
                     <h1
                         className={`font-gilroy  mt-17  ${
                             props.hMain
-                                ? "font-semibold   text-[2.3rem] xl:text-7xl  xl:leading-20 "
-                                : " text-[2.6rem]  xl:text-8xl md:text-stroke xl:mt-30 "
+                                ? "font-s  text-[2.3rem] xl:text-7xl  xl:leading-20 "
+                                : " text-[2.6rem]  xl:text-8xl text-stroke xl:mt-30 "
                         }    `}
                     >
                         {props.heading}
