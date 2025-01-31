@@ -10,17 +10,17 @@ export default function HeroContent(props) {
     return (
         <>
             <div
-                className="w-[75vw] sm:w-[48vw]  xl:w-[50vw] 2xl:w-[40rem]  sm:p-4 xl:pl-20 mx-auto sm:mx-0 xl:mt-24 xl:my-15 "
+                className="w-[75vw] sm:w-[48vw]  md:w-[40vw] xl:w-[50vw] 2xl:w-[40rem]  sm:p-4 xl:pl-20 mx-auto sm:mx-0 xl:mt-24 xl:my-15 "
                 id="hero-content"
             >
-                <div className=" flex flex-col items-center justify-center xl:justify-start xl:items-start ">
+                <div className=" flex flex-col items-center justify-start xl:items-start ">
                     <HeadingPara
                         heading={props.h1}
                         hMain={props.main}
                         para={props.p}
                         pMain={props.main}
                     />
-                    <div className="sm:w-[45vw]   ">
+                    <div className="sm:w-[45vw] md:w-[37vw]   ">
                         <GradientButton
                             GIT={props.buttonGIT}
                             button={props.button}
