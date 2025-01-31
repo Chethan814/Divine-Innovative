@@ -19,7 +19,7 @@ export default function HeadingPara(props) {
                 </div>
                 <div>
                     <p
-                        className={` font-gilroy  text-center sm:text-lef ${
+                        className={` font-gilroy  text-center sm:text-left ${
                             props.pMain
                                 ? "  font-normal  text-[1.06rem] xl:text-2xl mt-2 "
                                 : " font-light mt-8 text-[1rem] xl:text-[1.69rem] w-[8w] md:w-[34vw]  md:leading-10 "
