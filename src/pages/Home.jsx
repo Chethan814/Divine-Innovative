@@ -16,7 +16,7 @@ function Home() {
                 main={true}
                 button={true}
                 buttonGIT={true}
-                h1={`Your partner increating and growing brands.`}
+                h1={`Your partner in creating and growing brands.`}
                 p={`We transform your ideas into reality`}
             />
         </>
