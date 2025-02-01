@@ -21,8 +21,8 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 <div>
-                    <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between lg:gap-18 xl:gap-20 2xl:gap- xl:pr-8  xl:translate-y-[0.1rem]  font-gilroy-light text-[0.999rem] xl:text-[1.35rem] ">
-                        <li>
+                    <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between lg:gap-13 xl:gap-20 2xl:gap- xl:pr-8  xl:translate-y-[0.1rem]  font-gilroy-light text-[0.999rem] xl:text-[1.35rem] ">
+                        <li className=" lg:w8">
                             <NavLink to="/aboutus ">About us</NavLink>{" "}
                         </li>
                         <li>
@@ -32,8 +32,8 @@ export default function NavBar() {
                             <NavLink to="/Portfolio">Portfolio</NavLink>
                         </li>
                     </ul>
-                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-20 -translate-y-3 rounded-2xl" />
-                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-52 -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 lg:translate-x- -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-42 xl:translate-x- -translate-y-3 rounded-2xl" />
                 </div>
             </div>
         </>
