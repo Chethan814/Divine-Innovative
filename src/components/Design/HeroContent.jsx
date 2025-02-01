@@ -10,7 +10,7 @@ export default function HeroContent(props) {
     return (
         <>
             <div
-                className="w-[75vw] sm:w-[48vw]  md:w-[40vw] lg:w-[45vw] xl:w-[50vw] 2xl:w-[40rem]  sm:p-4 xl:pl-20 mx-auto sm:mx-0 xl:mt-24 xl:my-15 "
+                className="w-[75vw] sm:w-[48vw]  md:w-[40vw] lg:w-[40vw] 2xl:w-[40rem]  sm:p-4 xl:pl-20 mx-auto sm:mx-0 xl:mt-24 xl:my-15 "
                 id="hero-content"
             >
                 <div className=" flex flex-col items-center justify-start xl:items-start ">
