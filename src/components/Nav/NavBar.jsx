@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <>
             <div
-                className=" w-[85vw] sm:w-[45vw] md:w-[40vw] lg:w-[45vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 mx-auto sm:mx-0 sm:mt-12 lg:px-4 xl:ml-8 xl:pl-2 flex items-center justify-around lg:justify-between  2xl:justify-around "
+                className=" w-[85vw] sm:w-[45vw] md:w-[40vw] lg:w-[45vw] xl:w-[50vw] 2xl:w-[50rem] xl:h-[10vh] mt-8 xl:mt-3 mx-auto sm:mx-0 sm:mt-12 lg:px-4 xl:ml-8 xl:pl-2 flex items-center justify-around lg:justify-between  2xl:justify-around "
                 id="nav-bar"
             >
                 <div>
@@ -32,8 +32,8 @@ export default function NavBar() {
                             <NavLink to="/Portfolio">Portfolio</NavLink>
                         </li>
                     </ul>
-                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 lg:translate-x- -translate-y-3 rounded-2xl" />
-                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-42 xl:translate-x- -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 xl:translate-x-25 -translate-y-3 rounded-2xl" />
+                    <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-42 xl:translate-x-63 -translate-y-3 rounded-2xl" />
                 </div>
             </div>
         </>
