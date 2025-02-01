@@ -1,9 +1,9 @@
 import React from "react";
 
-import HeroSection from "../../components/Hero/Hero";
-import "../../styles/index.css";
+import HeroSection from "../../../components/Hero/Hero";
+import "../../../styles/index.css";
 
-function Services() {
+function Development() {
     return (
         <>
             {/* <div className="font-[Gilroy]">
@@ -13,10 +13,10 @@ function Services() {
                 </p>
             </div> */}
             <HeroSection
-                main={false}
+                main={true}
                 button={true}
-                buttonGIT={false}
-                h1={`SERVICES`}
+                buttonGIT={true}
+                h1={`DEVELOPMENT`}
                 p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
                     contents and interactions in our solutions. 
                     The insights provided by the creative vision, 
@@ -27,4 +27,4 @@ function Services() {
     );
 }
 
-export default Services;
+export default Development;

@@ -1,22 +1,17 @@
 import React from "react";
 
-import HeroSection from "../../components/Hero/Hero";
-import "../../styles/index.css";
+import HeroSection from "../../../components/Hero/Hero";
+import "../../../styles/index.css";
+import { faL, fas } from "@fortawesome/free-solid-svg-icons";
 
-function Services() {
+function Design() {
     return (
         <>
-            {/* <div className="font-[Gilroy]">
-                <h1 className="font-[500]">Welcome to My Portfolio</h1>
-                <p className="font-[400]">
-                    This is a paragraph with Poppins font.
-                </p>
-            </div> */}
             <HeroSection
                 main={false}
                 button={true}
                 buttonGIT={false}
-                h1={`SERVICES`}
+                h1={`DESIGN`}
                 p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
                     contents and interactions in our solutions. 
                     The insights provided by the creative vision, 
@@ -27,4 +22,4 @@ function Services() {
     );
 }
 
-export default Services;
+export default Design;
