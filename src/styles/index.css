@@ -38,6 +38,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 /* Gilroy */
 @font-face {
     font-family: 'Gilroy';
@@ -74,6 +102,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/font/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
 /* Themes */
 :root {
     /* Poppins */
@@ -83,15 +139,22 @@
     --font-weight-poppins-extralight: 200;
     --font-weight-poppins-medium: 500;
     --font-weight-poppins-bold: 700;
+    --font-weight-poppins-black: 900;
+    --font-weight-poppins-extrabold: 800;
     --font-weight-poppins-semibold: 600;
+    --font-weight-poppins-thin: 100;
 
     /* Gilroy */
     --font-family-gilroy: 'Gilroy', sans-serif;
-    --font-weight-gilroy-semibold: 600;
-    --font-weight-gilroy-medium: 500;
     --font-weight-gilroy-regular: 400;
     --font-weight-gilroy-light: 300;
+    --font-weight-gilroy-semibold: 600;
+    --font-weight-gilroy-medium: 500;
     --font-weight-gilroy-thin: 100;
+    --font-weight-gilroy-black: 900;
+    --font-weight-gilroy-extrabold: 800;
+    --font-weight-gilroy-heavy: 700;
+    --font-weight-gilroy-ultralight: 200;
 }
 
 /* Font Classes */
@@ -123,8 +186,20 @@
     font-weight: var(--font-weight-poppins-bold);
 }
 
+.font-poppins-black {
+    font-weight: var(--font-weight-poppins-black);
+}
+
+.font-poppins-extrabold {
+    font-weight: var(--font-weight-poppins-extrabold);
+}
+
 .font-poppins-semibold {
     font-weight: var(--font-weight-poppins-semibold);
+}
+
+.font-poppins-thin {
+    font-weight: var(--font-weight-poppins-thin);
 }
 
 .font-gilroy-regular {
@@ -145,4 +220,20 @@
 
 .font-gilroy-thin {
     font-weight: var(--font-weight-gilroy-thin);
+}
+
+.font-gilroy-black {
+    font-weight: var(--font-weight-gilroy-black);
+}
+
+.font-gilroy-extrabold {
+    font-weight: var(--font-weight-gilroy-extrabold);
+}
+
+.font-gilroy-heavy {
+    font-weight: var(--font-weight-gilroy-heavy);
+}
+
+.font-gilroy-ultralight {
+    font-weight: var(--font-weight-gilroy-ultralight);
 }
