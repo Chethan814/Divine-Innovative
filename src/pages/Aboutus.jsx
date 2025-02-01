@@ -2,6 +2,7 @@ import React from "react";
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
+import ContentCard from "../components/MainContent/ContentCard";
 
 function Aboutus() {
     return (
@@ -23,7 +24,7 @@ function Aboutus() {
                     If you are going to use a passage of Lorem Ipsum, 
                     you need to be sure there isn't anything embarrassing hidden.`}
             />
-
+            <ContentCard />
             
         </>
     );
