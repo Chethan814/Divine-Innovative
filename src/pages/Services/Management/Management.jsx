@@ -1,5 +1,6 @@
-import React from "react";
+// import React from "react";
 
+import Footer from "../../../components/Footer/Footer";
 import HeroSection from "../../../components/Hero/Hero";
 import "../../../styles/index.css";
 
@@ -23,6 +24,7 @@ function Management() {
                     paired with the modern technology touch, 
                     render a completely satisfying user experience in every design solution we offer.`}
             />
+            <Footer />
         </>
     );
 }

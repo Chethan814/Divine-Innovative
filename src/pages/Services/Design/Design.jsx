@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 
 import HeroSection from "../../../components/Hero/Hero";
 import "../../../styles/index.css";
-import { faL, fas } from "@fortawesome/free-solid-svg-icons";
+// import { faL, fas } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     return (
@@ -18,6 +19,7 @@ function Design() {
                     paired with the modern technology touch, 
                     render a completely satisfying user experience in every design solution we offer.`}
             />
+            <Footer />
         </>
     );
 }
