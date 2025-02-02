@@ -1,6 +1,5 @@
-import React from "react";
 import Logo from "/asstes/Logo/logo.png";
-import { Navigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
     return (
