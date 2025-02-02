@@ -1,8 +1,9 @@
-import React from "react";
+// import React from "react";
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
 import ContentCard from "../components/MainContent/ContentCard";
+import Footer from "../components/Footer/Footer";
 
 function Aboutus() {
     const content = {
@@ -82,6 +83,7 @@ function Aboutus() {
                 list={content.BANNER.List.Contents}
                 listValue={content.BANNER.List.li}
             />
+            <Footer/>
         </>
     );
 }

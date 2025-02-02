@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
     return (
@@ -19,6 +20,7 @@ function Home() {
                 h1={`Your partner in creating and growing brands.`}
                 p={`We transform your ideas into reality`}
             />
+            <Footer/>
         </>
     );
 }
