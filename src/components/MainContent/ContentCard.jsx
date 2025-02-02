@@ -1,29 +1,37 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "../../styles/index.css";
 import GradientButton from "../Design/Content/GradientButton";
 
 function List({ listValues, Contents }) {
-    if (!Contents) {
-        return (
-            <ul className="list-disc ml-4 sm:ml-5 mt-5 sm:mt-6 sm:text-[1rem]">
-                {listValues.map((value, index) => (
-                    <li key={index} className="my-2">
-                        {value}
-                    </li>
-                ))}
-            </ul>
-        );
-    } else {
-        return <></>;
-    }
+    return !Contents ? (
+        <ul className="list-disc ml-4 sm:ml-5 mt-5 sm:mt-6 sm:text-[1rem]">
+            {listValues.map((value, index) => (
+                <li key={index} className="my-2">
+                    {value}
+                </li>
+            ))}
+        </ul>
+    ) : null;
 }
 
 // sm:bg-red-400 md:bg-blue-400 lg:bg-green-400 xl:bg-pink-400 2xl:bg-amber-400
 
-function ContentCard({ index, heading, description, Contents, listValue }) {
+function ContentCard({
+    Tagline,
+    indexNeeded,
+    index,
+    heading,
+    description,
+    Contents,
+    listValue,
+}) {
     return (
         <section className="w-[80vw] sm:w-[90vw] xl:w-[80vw] mx-auto my-20 p-2 ">
-            <div className="text-[0.8rem] pb-1">Services 0{index}</div>
+            <div className="text-[0.8rem] pb-1">
+                {Tagline} {indexNeeded ? `0${index}` : ""}
+            </div>
             <div className="font-gilroy text-4xl sm:text-5xl">
                 <h2>{heading}</h2>
             </div>
