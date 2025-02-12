@@ -4,6 +4,7 @@ import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
 import ContentCard from "../components/MainContent/ContentCard";
 import Footer from "../components/Footer/Footer";
+import Info from "../components/Info/Info";
 
 const renderContentCard = (content) => (
     <ContentCard
@@ -14,59 +15,26 @@ const renderContentCard = (content) => (
         description={content.Description}
         list={content.List.Contents}
         listValue={content.List.li}
+        navlinks={content.Navlinks}
+        Button={content.Button}
     />
 );
 function Aboutus() {
     const content = {
-        Design: {
+        People: {
             Services: {
-                Tagline: "Service",
-                indexNeeded: true,
+                Tagline: "Meet our",
+                indexNeeded: false,
                 index: "1",
             },
-            Heading: `WEB DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Heading: `People`,
+            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.`,
             List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
+                Contents: false,
+                li: [],
             },
-        },
-        VISUAL: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
-            },
-        },
-        BANNER: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `BANNER DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
-            List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
-            },
+            Navlinks: "Design",
+            Button : false,
         },
     };
 
@@ -76,16 +44,17 @@ function Aboutus() {
                 main={false}
                 button={true}
                 buttonGIT={false}
+                link={`Design`}
                 h1={`ABOUT US`}
-                p={`There are many variations of passages of Lorem Ipsum available, 
-                    but the majority have suffered alteration in some form, by injected humour, 
-                    or randomised words which don't look even slightly believable. 
-                    If you are going to use a passage of Lorem Ipsum, 
-                    you need to be sure there isn't anything embarrassing hidden.`}
+                p={`Founded in 2024, Divine Innovative is a full-service Digital Marketing and Graphic Design agency renowned for building 
+                    communities and engaging target audiences in real-time through conversation-based communications. 
+                    By seamlessly blending cutting-edge technology, strategic insight, and creative communications, 
+                    Divine Innovative offers a unique and unparalleled experience.  `}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.People)}
+
+            <Info />
+
             <Footer />
         </>
     );

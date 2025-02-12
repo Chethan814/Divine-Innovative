@@ -2,7 +2,7 @@
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
-import Footer from "../components/Footer/Footer";
+import FooterRights from "../components/Footer/FooterRights";
 
 function Home() {
     return (
@@ -19,8 +19,10 @@ function Home() {
                 buttonGIT={true}
                 h1={`Your partner in creating and growing brands.`}
                 p={`We transform your ideas into reality`}
+                link={`Aboutus`}
             />
-            <Footer/>
+            <FooterRights />
+            
         </>
     );
 }
