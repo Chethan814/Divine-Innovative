@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+// import React from "react";
 
 import "../../styles/index.css";
 import GradientButton from "./Content/GradientButton";
@@ -24,6 +25,7 @@ export default function HeroContent(props) {
                         <GradientButton
                             GIT={props.buttonGIT}
                             button={props.button}
+                            navlinks={props.link}
                         />
                     </div>
 
