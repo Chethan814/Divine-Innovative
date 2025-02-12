@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+// import React from "react";
 import NavBar from "../Nav/NavBar";
 import HeroContent from "../Design/HeroContent";
 import Minimalistic from "../Design/Minimalistic";
@@ -19,6 +20,7 @@ export default function HeroSection(props) {
                             buttonGIT={props.buttonGIT}
                             h1={props.h1}
                             p={props.p}
+                            link={props.link}
                         />
                     </div>
                     <Minimalistic />
