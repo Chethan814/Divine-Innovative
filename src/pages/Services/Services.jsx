@@ -25,6 +25,7 @@ function Services() {
                     "Prototype",
                 ],
             },
+            Button: true,
         },
         VISUAL: {
             Services: {
@@ -43,6 +44,7 @@ function Services() {
                     "Presentations",
                 ],
             },
+            Button: true,
         },
         BANNER: {
             Services: {
@@ -56,6 +58,7 @@ function Services() {
                 Contents: true,
                 li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
             },
+            Button: true,
         },
     };
     const renderContentCard = (content) => (
@@ -67,6 +70,7 @@ function Services() {
             description={content.Description}
             list={content.List.Contents}
             listValue={content.List.li}
+            Button={content.Button}
         />
     );
     return (
@@ -81,6 +85,7 @@ function Services() {
                 main={false}
                 button={true}
                 buttonGIT={false}
+                link={`Design`}
                 h1={`SERVICES`}
                 p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
                     contents and interactions in our solutions. 
