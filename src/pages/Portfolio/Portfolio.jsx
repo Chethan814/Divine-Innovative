@@ -42,40 +42,7 @@ function Portfolio() {
                 ],
             },
             Navlinks: "Design",
-            Button : true,
-        },
-        VISUAL: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
-            },
-            Navlinks: "Design",
-        },
-        BANNER: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `BANNER DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
-            List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
-            },
-            Navlinks: "Design",
+            Button: true,
         },
     };
     return (
