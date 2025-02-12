@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route , Navigate } from "react-router-dom";
 import "./styles/index.css";
 
 // Pages
@@ -17,12 +17,13 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/aboutus" element={<Aboutus />} />
+                    <Route path="/aboutus" element={<Aboutus />}>
+                    <Route path="design" element={<Navigate to="/design" />} />
+                    </Route>
                     <Route path="/services" element={<Services />} />
-                        <Route path="/Design" element={<Design />} />
-                        <Route path="/Portfolio" element={<Portfolio />} />
-                        <Route path="/Development" element={<Development />} />
-                    
+                    <Route path="/Design" element={<Design />} />
+                    <Route path="/Portfolio" element={<Portfolio />} />
+                    <Route path="/Development" element={<Development />} />
                 </Routes>
             </Router>
         </>
