@@ -26,6 +26,8 @@ function ContentCard({
     description,
     Contents,
     listValue,
+    navlinks,
+    Button
 }) {
     return (
         <section className="w-[80vw] sm:w-[90vw] xl:w-[80vw] mx-auto my-20 p-2 ">
@@ -42,7 +44,7 @@ function ContentCard({
                 <List Contents={Contents} listValues={listValue} />
             </div>
             <div className="lg:-translate-x-6 xl:translate-x-0">
-                <GradientButton button={true} GIT={true} />
+                <GradientButton button={Button} GIT={false} navlinks={navlinks} />
             </div>
         </section>
     );
