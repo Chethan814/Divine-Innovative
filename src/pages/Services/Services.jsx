@@ -1,64 +1,57 @@
 // import React from "react";
 
-import HeroSection from "../../components/Hero/Hero";
 import "../../styles/index.css";
-import Footer from "../../components/Footer/Footer";
+import HeroSection from "../../components/Hero/Hero";
 import ContentCard from "../../components/MainContent/ContentCard";
+import Footer from "../../components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function Services() {
     const content = {
         Design: {
             Services: {
                 Tagline: "Service",
-                indexNeeded: true,
+                indexNeeded: false,
                 index: "1",
             },
-            Heading: `WEB DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Heading: `DESIGN`,
+            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
             List: {
                 Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
+                li: [],
             },
             Button: true,
+            Navlinks: "Design",
         },
-        VISUAL: {
+        DEVELOPMENT: {
             Services: {
                 Tagline: "Service",
-                indexNeeded: true,
+                indexNeeded: false,
                 index: "1",
             },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Heading: `DEVELOPMENT`,
+            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
             List: {
                 Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
+                li: [],
             },
             Button: true,
+            Navlinks: "Development",
         },
         BANNER: {
             Services: {
                 Tagline: "Service",
-                indexNeeded: true,
+                indexNeeded: false,
                 index: "1",
             },
-            Heading: `BANNER DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Heading: `MANAGEMENT`,
+            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
             List: {
                 Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                li: [],
             },
             Button: true,
+            Navlinks: "Management",
         },
     };
     const renderContentCard = (content) => (
@@ -71,16 +64,11 @@ function Services() {
             list={content.List.Contents}
             listValue={content.List.li}
             Button={content.Button}
+            navlinks={content.Navlinks}
         />
     );
     return (
         <>
-            {/* <div className="font-[Gilroy]">
-                <h1 className="font-[500]">Welcome to My Portfolio</h1>
-                <p className="font-[400]">
-                    This is a paragraph with Poppins font.
-                </p>
-            </div> */}
             <HeroSection
                 main={false}
                 button={true}
@@ -94,10 +82,11 @@ function Services() {
                     render a completely satisfying user experience in every design solution we offer.`}
             />
             {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
+            {renderContentCard(content.DEVELOPMENT)}
             {renderContentCard(content.BANNER)}
 
             <Footer />
+            <Outlet />
         </>
     );
 }

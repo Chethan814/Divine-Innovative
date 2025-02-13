@@ -1,9 +1,9 @@
 // import React from "react";
 
-import Footer from "../../components/Footer/Footer";
+import "../../styles/index.css";
 import HeroSection from "../../components/Hero/Hero";
 import ContentCard from "../../components/MainContent/ContentCard";
-import "../../styles/index.css";
+import Footer from "../../components/Footer/Footer";
 // import { faL, fas } from "@fortawesome/free-solid-svg-icons";
 
 const renderContentCard = (content) => (

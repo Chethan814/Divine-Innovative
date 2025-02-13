@@ -1,10 +1,7 @@
-// import React from "react";
-
-import HeroSection from "../../../components/Hero/Hero";
 import "../../../styles/index.css";
-// import { faL, fas } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../../components/Footer/Footer";
+import HeroSection from "../../../components/Hero/Hero";
 import ContentCard from "../../../components/MainContent/ContentCard";
+import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
@@ -15,7 +12,7 @@ function Design() {
                 index: "1",
             },
             Heading: `WEB DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
             List: {
                 Contents: true,
                 li: [
@@ -27,6 +24,7 @@ function Design() {
                 ],
             },
             Button: true,
+            Navlinks: "Design",
         },
         VISUAL: {
             Services: {
@@ -35,7 +33,7 @@ function Design() {
                 index: "1",
             },
             Heading: `VISUAL IDENTITY.`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
             List: {
                 Contents: true,
                 li: [
@@ -46,6 +44,7 @@ function Design() {
                 ],
             },
             Button: true,
+            Navlinks: "Design",
         },
         BANNER: {
             Services: {
@@ -54,12 +53,28 @@ function Design() {
                 index: "1",
             },
             Heading: `BANNER DESIGN`,
-            Description: `A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, contents and interactions in our solutions. The insights provided by the creative vision, paired with the modern technology touch, render a completely satisfying user experience in every design solution we offer.`,
+            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
             List: {
                 Contents: true,
                 li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
             },
             Button: true,
+            Navlinks: "Design",
+        },
+        Graphic: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "1",
+            },
+            Heading: `GRAPHIC DESIGN`,
+            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            List: {
+                Contents: true,
+                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+            },
+            Button: true,
+            Navlinks: "Design",
         },
     };
     const renderContentCard = (content) => (
@@ -72,6 +87,7 @@ function Design() {
             list={content.List.Contents}
             listValue={content.List.li}
             Button={content.Button}
+            navlinks={content.Navlinks}
         />
     );
     return (
