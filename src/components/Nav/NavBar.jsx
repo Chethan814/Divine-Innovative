@@ -22,13 +22,13 @@ export default function NavBar() {
                 <div>
                     <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between xl:justify-start xl:items-start lg:gap-13   xl:pr-8  xl:translate-y-[0.1rem] xl:translate-x-15  font-gilroy-light text-[0.999rem] xl:text-[1.35rem]  ">
                         <li className=" ">
-                            <NavLink to="/aboutus ">About us</NavLink>{" "}
+                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/aboutus">About us</NavLink>{" "}
                         </li>
                         <li>
-                            <NavLink to="/Services">Services</NavLink>
+                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/Services">Services</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Portfolio">Portfolio</NavLink>
+                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/Portfolio">Portfolio</NavLink>
                         </li>
                     </ul>
                     <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 xl:translate-x-37 -translate-y-3 rounded-2xl" />
