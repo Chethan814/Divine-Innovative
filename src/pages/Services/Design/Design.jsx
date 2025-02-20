@@ -24,7 +24,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "WebDesign",
+            Navlinks: "services/design/WebDesign",
         },
         Graphic: {
             Services: {
@@ -44,7 +44,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "GraphicDesign",
+            Navlinks: "services/design/GraphicDesign",
         },
         Motion: {
             Services: {
@@ -64,7 +64,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "MotionDesign",
+            Navlinks: "services/design/MotionDesign",
         },
         NicheServices: {
             Services: {
@@ -84,7 +84,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "NicheServices",
+            Navlinks: "services/design/NicheServices",
         },
         Print: {
             Services: {
@@ -104,7 +104,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "PrintDesign",
+            Navlinks: "services/design/PrintDesign",
         },
     };
 

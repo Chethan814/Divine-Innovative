@@ -1,10 +1,8 @@
 // import React from "react";
-
 import "../../styles/index.css";
 import HeroSection from "../../components/Hero/Hero";
 import ContentCard from "../../components/MainContent/ContentCard";
 import Footer from "../../components/Footer/Footer";
-import { Outlet } from "react-router-dom";
 
 function Services() {
     const content = {
@@ -21,7 +19,7 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "/design",
+            Navlinks: "services/design",
         },
         DEVELOPMENT: {
             Services: {
@@ -36,9 +34,9 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "/development",
+            Navlinks: "services/development",
         },
-        BANNER: {
+        MANAGEMENT: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: false,
@@ -51,7 +49,7 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "/management",
+            Navlinks: "services/management",
         },
     };
     const renderContentCard = (content) => (
@@ -83,10 +81,9 @@ function Services() {
             />
             {renderContentCard(content.Design)}
             {renderContentCard(content.DEVELOPMENT)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.MANAGEMENT)}
 
             <Footer />
-            <Outlet />
         </>
     );
 }
