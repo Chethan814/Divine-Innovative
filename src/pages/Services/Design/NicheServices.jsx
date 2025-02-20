@@ -5,78 +5,84 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        Design: {
+        NicheServices: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
                 index: "1",
             },
-            Heading: `WEB DESIGN`,
-            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
+            Heading: `NICHE SERVICES`,
+            Description: `Our niche services cater to unique and specific design needs, providing customized solutions that set your brand apart. From custom QR codes to interactive PDFs, we deliver innovative and personalized services that enhance your brand's functionality and appeal.`,
             List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        VISUAL: {
+        CustomQRCodeDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "2",
             },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
+            Heading: `CUSTOM QR CODE DESIGN`,
+            Description: `Our custom QR code design services create branded QR codes for websites or apps, offering a unique and recognizable touch to your digital presence.`,
             List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        BANNER: {
+        Mockups: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "3",
             },
-            Heading: `BANNER DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `3D MOCKUPS`,
+            Description: `Our 3D mockup services provide realistic product packaging and digital display designs, helping you visualize and present your concepts effectively.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        Graphic: {
+        InteractivePDFs: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "4",
             },
-            Heading: `GRAPHIC DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `INTERACTIVE PDFs`,
+            Description: `Our interactive PDF services create engaging forms, guides, and presentations that enhance user experience and functionality.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        CustomIconDesign: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "5",
+            },
+            Heading: `CUSTOM ICON DESIGN`,
+            Description: `Our custom icon design services create unique icons for apps or websites, adding a distinctive and cohesive visual element to your brand.`,
+            List: {
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
     };
+    
+
     const renderContentCard = (content) => (
         <ContentCard
             Tagline={content.Services.Tagline}
@@ -96,16 +102,14 @@ function Design() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                h1={`DESIGN`}
-                p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
-                    contents and interactions in our solutions. 
-                    The insights provided by the creative vision, 
-                    paired with the modern technology touch, 
-                    render a completely satisfying user experience in every design solution we offer.`}
+                h1={`NICHE SERVICES`}
+                p={`Our niche services cater to unique and specific design needs, providing customized solutions that set your brand apart. Whether it's custom QR code design or interactive PDFs, we deliver innovative and personalized services that enhance your brand's functionality and appeal.`}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.NicheServices)}
+            {renderContentCard(content.CustomQRCodeDesign)}
+            {renderContentCard(content.Mockups)}
+            {renderContentCard(content.InteractivePDFs)}
+            {renderContentCard(content.CustomIconDesign)}
             <Footer />
         </>
     );

@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        Design: {
+        WebDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
@@ -24,59 +24,90 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "Design",
-        },
-        VISUAL: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
-            },
-            Button: true,
-            Navlinks: "Design",
-        },
-        BANNER: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `BANNER DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
-            List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
-            },
-            Button: true,
-            Navlinks: "Design",
+            Navlinks: "WebDesign",
         },
         Graphic: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "2",
             },
             Heading: `GRAPHIC DESIGN`,
             Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
             List: {
                 Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                li: [
+                    "Business Card Design",
+                    "Flyers and Brochures",
+                    "Social Media Graphics",
+                    "Presentation Design",
+                ],
             },
             Button: true,
-            Navlinks: "Design",
+            Navlinks: "GraphicDesign",
+        },
+        Motion: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "3",
+            },
+            Heading: `MOTION DESIGN`,
+            Description: `Our motion design services bring your brand to life through dynamic visuals. We combine creativity and technology to deliver engaging and memorable motion graphics that capture your audience's attention. Whether it's for social media, advertising, or presentations, our designs ensure your message is conveyed with impact.`,
+            List: {
+                Contents: true,
+                li: [
+                    "Video Editing",
+                    "Animated Logos",
+                    "GIF Creation",
+                    "Explainer Videos",
+                ],
+            },
+            Button: true,
+            Navlinks: "MotionDesign",
+        },
+        NicheServices: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "4",
+            },
+            Heading: `NICHE SERVICES`,
+            Description: `Our niche services cater to unique and specific design needs, providing customized solutions that set your brand apart. Whether it's custom QR code design or interactive PDFs, we deliver innovative and personalized services that enhance your brand's functionality and appeal.`,
+            List: {
+                Contents: true,
+                li: [
+                    "Custom QR Code Design",
+                    "3D Mockups",
+                    "Interactive PDFs",
+                    "Custom Icon Design",
+                ],
+            },
+            Button: true,
+            Navlinks: "NicheServices",
+        },
+        Print: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "5",
+            },
+            Heading: `PRINT DESIGN`,
+            Description: `Our print design services ensure your brand is well-represented across all physical mediums. From event posters to wedding invitations, we create visually appealing and professionally designed print materials that leave a lasting impression.`,
+            List: {
+                Contents: true,
+                li: [
+                    "Event Posters",
+                    "Wedding Invitations",
+                    "Calendars and Planners",
+                    "Stationery Design",
+                ],
+            },
+            Button: true,
+            Navlinks: "PrintDesign",
         },
     };
+
     const renderContentCard = (content) => (
         <ContentCard
             Tagline={content.Services.Tagline}
@@ -103,9 +134,11 @@ function Design() {
                     paired with the modern technology touch, 
                     render a completely satisfying user experience in every design solution we offer.`}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.WebDesign)}
+            {renderContentCard(content.Graphic)}
+            {renderContentCard(content.Motion)}
+            {renderContentCard(content.NicheServices)}
+            {renderContentCard(content.Print)}
             <Footer />
         </>
     );

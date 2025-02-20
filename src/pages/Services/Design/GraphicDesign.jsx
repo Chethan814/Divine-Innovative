@@ -5,78 +5,128 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        Design: {
+        BusinessCardDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
                 index: "1",
             },
-            Heading: `WEB DESIGN`,
-            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
-            },
+            Heading: `BUSINESS CARD DESIGN`,
+            Description: `Our business card design services ensure you make a lasting impression with professionally crafted and visually appealing cards that reflect your brand's identity.`,
             Button: true,
             Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
         },
-        VISUAL: {
+        FlyersBrochures: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "2",
             },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
-            },
+            Heading: `FLYERS AND BROCHURES`,
+            Description: `Our flyer and brochure design services combine creativity and practicality to produce eye-catching and informative materials that effectively convey your message.`,
             Button: true,
             Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
         },
-        BANNER: {
+        SocialMediaGraphics: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "3",
             },
-            Heading: `BANNER DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
-            List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
-            },
+            Heading: `SOCIAL MEDIA GRAPHICS`,
+            Description: `Our social media graphics services provide engaging and visually stunning content for your social media platforms, enhancing your online presence and audience engagement.`,
             Button: true,
             Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
         },
-        Graphic: {
+        PresentationDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
                 index: "1",
             },
-            Heading: `GRAPHIC DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
-            List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
-            },
+            Heading: `PRESENTATION DESIGN`,
+            Description: `Our presentation design services deliver professionally crafted PowerPoint or Google Slides presentations that captivate your audience and effectively communicate your ideas.`,
             Button: true,
             Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
+        },
+        PackagingDesign: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "1",
+            },
+            Heading: `PACKAGING DESIGN`,
+            Description: `Our packaging design services create visually appealing labels and product packaging that attract customers and reinforce your brand's identity.`,
+            Button: true,
+            Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
+        },
+        CustomIllustrations: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "1",
+            },
+            Heading: `CUSTOM ILLUSTRATIONS`,
+            Description: `Our custom illustration services provide unique and creative artwork tailored for branding or merchandise, adding a distinctive touch to your brand.`,
+            Button: true,
+            Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
+        },
+        Infographics: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "1",
+            },
+            Heading: `INFOGRAPHICS`,
+            Description: `Our infographic design services transform complex information into visually engaging and easy-to-understand graphics, ideal for blogs, presentations, and social media.`,
+            Button: true,
+            Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
+        },
+        BrandIdentityPackages: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "1",
+            },
+            Heading: `BRAND IDENTITY PACKAGES`,
+            Description: `Our brand identity packages encompass logo design, color palettes, typography, and brand guidelines to ensure a cohesive and strong visual representation of your brand.`,
+            Button: true,
+            Navlinks: "Design",
+            List: {
+                Contents: false,
+                li: [],
+            },
         },
     };
+
     const renderContentCard = (content) => (
         <ContentCard
             Tagline={content.Services.Tagline}
@@ -96,16 +146,18 @@ function Design() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                h1={`DESIGN`}
-                p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
-                    contents and interactions in our solutions. 
-                    The insights provided by the creative vision, 
-                    paired with the modern technology touch, 
-                    render a completely satisfying user experience in every design solution we offer.`}
+                h1={`GRAPHIC DESIGN`}
+                p={`Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.BusinessCardDesign)}
+            {renderContentCard(content.FlyersBrochures)}
+            {renderContentCard(content.SocialMediaGraphics)}
+            {renderContentCard(content.PresentationDesign)}
+            {renderContentCard(content.PackagingDesign)}
+            {renderContentCard(content.CustomIllustrations)}
+            {renderContentCard(content.Infographics)}
+            {renderContentCard(content.BrandIdentityPackages)}
+
             <Footer />
         </>
     );

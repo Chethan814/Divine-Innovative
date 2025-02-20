@@ -5,78 +5,113 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        Design: {
+        MotionDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
                 index: "1",
             },
-            Heading: `WEB DESIGN`,
-            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
+            Heading: `MOTION DESIGN`,
+            Description: `Transform your brand with our motion design services. We blend creative vision with the latest technology to deliver visually engaging content that captivates your audience. From animated logos to explainer videos, our dynamic visuals ensure your message stands out.`,
             List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        VISUAL: {
+        VideoEditing: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "2",
             },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
+            Heading: `VIDEO EDITING`,
+            Description: `Elevate your visual storytelling with our video editing services. We create compelling promotional videos, reels, and ads that effectively communicate your brand's message and resonate with your audience.`,
             List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        BANNER: {
+        AnimatedLogos: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "3",
             },
-            Heading: `BANNER DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `ANIMATED LOGOS`,
+            Description: `Add a dynamic touch to your branding with our animated logo services. We design eye-catching animated logos that leave a memorable impression and enhance your brand's identity.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        Graphic: {
+        ExplainerVideos: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "4",
             },
-            Heading: `GRAPHIC DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `EXPLAINER VIDEOS`,
+            Description: `Simplify complex ideas with our explainer video services. Using 2D or motion graphics, we create engaging videos that effectively communicate your concepts in a clear and captivating manner.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        EventInvitationVideos: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "5",
+            },
+            Heading: `EVENT INVITATION VIDEOS`,
+            Description: `Make your event invitations stand out with our event invitation video services. We design visually appealing and engaging videos for personal or corporate events, ensuring your invitations are memorable.`,
+            List: {
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        Multimedia: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "6",
+            },
+            Heading: `MULTIMEDIA`,
+            Description: `Boost your online presence with our multimedia services. We produce visually appealing content for social media and ads, helping to increase engagement and visibility for your brand. From GIF creation to promotional videos, our services enhance your digital footprint.`,
+            List: {
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        GIFCreation: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "7",
+            },
+            Heading: `GIF CREATION`,
+            Description: `Our GIF creation services provide visually engaging content for social media and ads, helping to increase your brand's visibility and engagement.`,
+            List: {
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
     };
+
     const renderContentCard = (content) => (
         <ContentCard
             Tagline={content.Services.Tagline}
@@ -96,16 +131,16 @@ function Design() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                h1={`DESIGN`}
-                p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
-                    contents and interactions in our solutions. 
-                    The insights provided by the creative vision, 
-                    paired with the modern technology touch, 
-                    render a completely satisfying user experience in every design solution we offer.`}
+                h1={`Motion Design`}
+                p={`Our motion design services bring your brand to life through dynamic visuals. We combine creativity and technology to deliver engaging and memorable motion graphics that capture your audience's attention. Whether it's for social media, advertising, or presentations, our designs ensure your message is conveyed with impact.`}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.MotionDesign)}
+            {renderContentCard(content.VideoEditing)}
+            {renderContentCard(content.AnimatedLogos)}
+            {renderContentCard(content.ExplainerVideos)}
+            {renderContentCard(content.EventInvitationVideos)}
+            {renderContentCard(content.Multimedia)}
+            {renderContentCard(content.GIFCreation)}
             <Footer />
         </>
     );

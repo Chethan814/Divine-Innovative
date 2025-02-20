@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        Design: {
+        WebDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
@@ -14,69 +14,120 @@ function Design() {
             Heading: `WEB DESIGN`,
             Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
             List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        VISUAL: {
+        LandingPageDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "2",
             },
-            Heading: `VISUAL IDENTITY.`,
-            Description: `Our visual identity services artfully integrate contemporary aesthetics with advanced technological elements to create a harmonious brand presence. Through meticulously crafted visuals, engaging content, and interactive designs, we ensure a captivating and memorable user experience. Our solutions not only reflect your brand’s essence but also elevate it, combining creative insights with cutting-edge technology to deliver exceptional results.`,
+            Heading: `LANDING PAGE DESIGN`,
+            Description: `For marketing campaigns or sales funnels, our landing page design services ensure high conversion rates with visually appealing and strategically structured pages.`,
             List: {
-                Contents: true,
-                li: [
-                    "Logo Designing",
-                    "Social media",
-                    "Marketing Assets",
-                    "Presentations",
-                ],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        BANNER: {
+        ResponsiveDesignOptimization: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "3",
             },
-            Heading: `BANNER DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `RESPONSIVE DESIGN OPTIMIZATION`,
+            Description: `We optimize your website for mobile, tablet, and desktop devices, ensuring a seamless and consistent user experience across all platforms.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
-        Graphic: {
+        UIUXDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "1",
+                index: "4",
             },
-            Heading: `GRAPHIC DESIGN`,
-            Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
+            Heading: `UI/UX DESIGN`,
+            Description: `Our UI/UX design services include prototypes, wireframes, and user flow analysis to create intuitive and engaging interfaces that enhance user satisfaction.`,
             List: {
-                Contents: true,
-                li: ["Story board", "Hand Sketch", "Moodboard", "Digital art"],
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        RedesignServices: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "5",
+            },
+            Heading: `REDESIGN SERVICES`,
+            Description: `We improve outdated websites with our redesign services, enhancing their aesthetics, functionality, and performance to meet modern standards.`,
+            List: {
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        CustomWordPressThemes: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "6",
+            },
+            Heading: `CUSTOM WORDPRESS THEMES`,
+            Description: `Our custom WordPress themes are tailored to clients' needs, providing unique and functional designs that align with your brand's identity.`,
+            List: {
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        PortfolioWebsiteDesign: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "7",
+            },
+            Heading: `PORTFOLIO WEBSITE DESIGN`,
+            Description: `We design professional portfolio websites for artists, photographers, and other professionals, showcasing their work in a visually appealing and organized manner.`,
+            List: {
+                Contents: false,
+                li: [],
+            },
+            Button: true,
+            Navlinks: "Design",
+        },
+        EcommerceWebsiteDesign: {
+            Services: {
+                Tagline: "Service",
+                indexNeeded: true,
+                index: "8",
+            },
+            Heading: `E-COMMERCE WEBSITE DESIGN`,
+            Description: `Our e-commerce website design services, including platforms like Shopify and WooCommerce, ensure a seamless shopping experience for your customers with visually appealing and user-friendly interfaces.`,
+            List: {
+                Contents: false,
+                li: [],
             },
             Button: true,
             Navlinks: "Design",
         },
     };
+    
+
     const renderContentCard = (content) => (
         <ContentCard
             Tagline={content.Services.Tagline}
@@ -96,16 +147,17 @@ function Design() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                h1={`DESIGN`}
-                p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
-                    contents and interactions in our solutions. 
-                    The insights provided by the creative vision, 
-                    paired with the modern technology touch, 
-                    render a completely satisfying user experience in every design solution we offer.`}
+                h1={`WEB DESIGN`}
+                p={`We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`}
             />
-            {renderContentCard(content.Design)}
-            {renderContentCard(content.VISUAL)}
-            {renderContentCard(content.BANNER)}
+            {renderContentCard(content.WebDesign)}
+            {renderContentCard(content.LandingPageDesign)}
+            {renderContentCard(content.ResponsiveDesignOptimization)}
+            {renderContentCard(content.UIUXDesign)}
+            {renderContentCard(content.RedesignServices)}
+            {renderContentCard(content.CustomWordPressThemes)}
+            {renderContentCard(content.PortfolioWebsiteDesign)}
+            {renderContentCard(content.EcommerceWebsiteDesign)}
             <Footer />
         </>
     );

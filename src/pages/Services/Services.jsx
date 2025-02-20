@@ -21,7 +21,7 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "Design",
+            Navlinks: "/design",
         },
         DEVELOPMENT: {
             Services: {
@@ -36,7 +36,7 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "Development",
+            Navlinks: "/development",
         },
         BANNER: {
             Services: {
@@ -51,7 +51,7 @@ function Services() {
                 li: [],
             },
             Button: true,
-            Navlinks: "Management",
+            Navlinks: "/management",
         },
     };
     const renderContentCard = (content) => (
