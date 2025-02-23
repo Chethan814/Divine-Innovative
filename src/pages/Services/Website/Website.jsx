@@ -22,11 +22,12 @@ function Website() {
             List: {
                 Contents: true,
                 li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
+                    "Web Design",
+                    "UI & UX Design",
+                    "Redesign Website",
+                    "Search Engine Optimization (SEO)",
+                    "Content Writing"
+                    
                 ],
             },
             Button: true,
@@ -43,11 +44,10 @@ function Website() {
             List: {
                 Contents: true,
                 li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
+                    "Web Development",
+                    "Domain Manage & Setup",
+                    "Hosting",
+                    "Web Maintenance",
                 ],
             },
             Button: true,
