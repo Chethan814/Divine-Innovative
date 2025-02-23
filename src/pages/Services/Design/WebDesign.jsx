@@ -5,26 +5,11 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        WebDesign: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `WEB DESIGN`,
-            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
-            List: {
-                Contents: false,
-                li: [],
-            },
-            Button: true,
-            Navlinks: "Design",
-        },
         LandingPageDesign: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "2",
+                index: "1",
             },
             Heading: `LANDING PAGE DESIGN`,
             Description: `For marketing campaigns or sales funnels, our landing page design services ensure high conversion rates with visually appealing and strategically structured pages.`,
@@ -126,7 +111,6 @@ function Design() {
             Navlinks: "Design",
         },
     };
-    
 
     const renderContentCard = (content) => (
         <ContentCard
@@ -151,13 +135,12 @@ function Design() {
                 h1={`WEB DESIGN`}
                 p={`We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`}
             />
-            {renderContentCard(content.WebDesign)}
             {renderContentCard(content.LandingPageDesign)}
+            {renderContentCard(content.PortfolioWebsiteDesign)}
             {renderContentCard(content.ResponsiveDesignOptimization)}
             {renderContentCard(content.UIUXDesign)}
             {renderContentCard(content.RedesignServices)}
             {renderContentCard(content.CustomWordPressThemes)}
-            {renderContentCard(content.PortfolioWebsiteDesign)}
             {renderContentCard(content.EcommerceWebsiteDesign)}
             <Footer />
         </>

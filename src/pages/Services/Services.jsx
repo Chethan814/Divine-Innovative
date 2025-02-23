@@ -21,20 +21,20 @@ function Services() {
             Button: true,
             Navlinks: "services/design",
         },
-        DEVELOPMENT: {
+        Website: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: false,
                 index: "1",
             },
-            Heading: `DEVELOPMENT`,
-            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
+            Heading: `Website`,
+            Description: `Our projects are defined by a masterful combination of technology and creativity, captivating with stunning visuals, engaging content, and fluid interactions. The synergy between innovative vision and modern technology ensures a completely satisfying user experience in every web design and development solution we deliver.`,
             List: {
                 Contents: true,
-                li: [],
+                li: ['Web Design', 'Web Development'],
             },
             Button: true,
-            Navlinks: "services/development",
+            Navlinks: "services/website",
         },
         MANAGEMENT: {
             Services: {
@@ -80,7 +80,7 @@ function Services() {
                     render a completely satisfying user experience in every design solution we offer.`}
             />
             {renderContentCard(content.Design)}
-            {renderContentCard(content.DEVELOPMENT)}
+            {renderContentCard(content.Website)}
             {renderContentCard(content.MANAGEMENT)}
 
             <Footer />

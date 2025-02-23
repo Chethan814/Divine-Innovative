@@ -6,6 +6,8 @@ import ContentCard from "../components/MainContent/ContentCard";
 import Footer from "../components/Footer/Footer";
 import Info from "../components/Info/Info";
 
+import SwiftRides from '../asstes/Project/Chethan/swiftrides.png'
+
 const renderContentCard = (content) => (
     <ContentCard
         Tagline={content.Services.Tagline}
@@ -55,10 +57,12 @@ function Aboutus() {
                     "Development",
                 ],
             },
-            Navlinks: "Design",
+            Navlinks: "services/website",
             Button: true,
         },
     };
+
+    const Webdesign_description = `We excel at transforming your ideas, thoughts, and vision into custom web designs that showcase your business and turn prospects into clients. Our dedicated in-house team conducts thorough analyses to craft designs that effectively convey your business's identity, mission, and vision.`
 
     return (
         <>
@@ -77,7 +81,7 @@ function Aboutus() {
             
             {renderContentCard(content.Chethan)}
 
-            <Info />
+            <Info image={SwiftRides} description={Webdesign_description} />
 
             <Footer />
         </>
