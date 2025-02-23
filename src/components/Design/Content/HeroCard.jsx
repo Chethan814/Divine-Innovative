@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+// import React from "react";
 
 import logo1 from "/asstes/icons/Identity.png";
 import logo2 from "/asstes/icons/CircleWavyCheck.png";

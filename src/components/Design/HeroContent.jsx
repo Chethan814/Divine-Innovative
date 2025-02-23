@@ -29,7 +29,7 @@ export default function HeroContent(props) {
                         />
                     </div>
 
-                    <HeroCard requied={props.main} />
+                    <HeroCard requied={props.card}  />
                     <Rights rMain={props.main} />
                 </div>
             </div>
