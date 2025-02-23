@@ -130,8 +130,9 @@ function Design() {
             <HeroSection
                 main={false}
                 button={true}
-                buttonGIT={false}
+                buttonGIT={true}
                 h1={`Motion Design`}
+                link={`info`}
                 p={`Our motion design services bring your brand to life through dynamic visuals. We combine creativity and technology to deliver engaging and memorable motion graphics that capture your audience's attention. Whether it's for social media, advertising, or presentations, our designs ensure your message is conveyed with impact.`}
             />
             {renderContentCard(content.MotionDesign)}

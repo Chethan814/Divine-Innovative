@@ -126,7 +126,8 @@ function Design() {
             <HeroSection
                 main={false}
                 button={true}
-                buttonGIT={false}
+                buttonGIT={true}
+                link={`info`}
                 h1={`DESIGN`}
                 p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
                     contents and interactions in our solutions. 

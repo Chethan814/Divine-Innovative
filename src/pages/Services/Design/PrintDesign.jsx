@@ -115,8 +115,9 @@ function Design() {
             <HeroSection
                 main={false}
                 button={true}
-                buttonGIT={false}
+                buttonGIT={true}
                 h1={`PRINT DESIGN`}
+                link={`info`}
                 p={`Our print design services ensure your brand is well-represented across all physical mediums. From event posters to wedding invitations, we create visually appealing and professionally designed print materials that leave a lasting impression.`}
             />
             {renderContentCard(content.PrintDesign)}

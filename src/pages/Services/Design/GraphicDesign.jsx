@@ -145,7 +145,8 @@ function Design() {
             <HeroSection
                 main={false}
                 button={true}
-                buttonGIT={false}
+                buttonGIT={true}
+                link={'info'}
                 h1={`GRAPHIC DESIGN`}
                 p={`Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`}
             />

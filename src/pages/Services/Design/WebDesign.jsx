@@ -146,7 +146,8 @@ function Design() {
             <HeroSection
                 main={false}
                 button={true}
-                buttonGIT={false}
+                buttonGIT={true}
+                link={`info`}
                 h1={`WEB DESIGN`}
                 p={`We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`}
             />
