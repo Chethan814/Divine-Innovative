@@ -15,6 +15,7 @@ import WebDesign from "./pages/Services/Design/WebDesign.jsx";
 import Development from "./pages/Services/Development/Development.jsx";
 import Management from "./pages/Services/Management/Management.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import UserForm from "./pages/Info/UserForm.jsx";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             { path: "/", element: <Home /> },
+            { path: "/info", element: <UserForm /> },
             { path: "/aboutus", element: <Aboutus /> },
             { path: "/portfolio", element: <Portfolio /> },
             { path: "/services", element: <Services /> },
