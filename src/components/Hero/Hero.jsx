@@ -21,6 +21,7 @@ export default function HeroSection(props) {
                             h1={props.h1}
                             p={props.p}
                             link={props.link}
+                            card={props.card}
                         />
                     </div>
                     <Minimalistic />
