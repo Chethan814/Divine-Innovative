@@ -34,7 +34,29 @@ function Aboutus() {
                 li: [],
             },
             Navlinks: "Design",
-            Button : false,
+            Button: false,
+        },
+        Chethan: {
+            Services: {
+                Tagline: "Web Developer",
+                indexNeeded: false,
+                index: "1",
+            },
+            Heading: `Chethan K R`,
+            Description: `I am a multifaceted professional skilled in web development, design, management, and social media handling on LinkedIn and X. I craft projects that beautifully blend technology and art, offering elegant visuals, engaging content, and seamless interactions. My unique creative vision and modern technological approach ensure a captivating user experience in every design solution I provide.`,
+            List: {
+                Contents: true,
+                li: [
+                    "Web Interface",
+                    "User Experience",
+                    "Web Design",
+                    "Wireframe",
+                    "Prototype",
+                    "Development",
+                ],
+            },
+            Navlinks: "Design",
+            Button: true,
         },
     };
 
@@ -44,7 +66,7 @@ function Aboutus() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                link={`Design`}
+                link={`info`}
                 h1={`ABOUT US`}
                 p={`Founded in 2024, Divine Innovative is a full-service Digital Marketing and Graphic Design agency renowned for building 
                     communities and engaging target audiences in real-time through conversation-based communications. 
@@ -52,6 +74,8 @@ function Aboutus() {
                     Divine Innovative offers a unique and unparalleled experience.  `}
             />
             {renderContentCard(content.People)}
+            
+            {renderContentCard(content.Chethan)}
 
             <Info />
 

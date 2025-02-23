@@ -18,10 +18,13 @@ function Home() {
                 button={true}
                 buttonGIT={true}
                 h1={`Your partner in creating and growing brands.`}
-                p={`We transform your ideas into reality`}
-                link={`Aboutus`}
+                p={`We transform your ideas into reality `}
+                link={`info`}
+                card={true}
             />
             <FooterRights />
+            
+            
             
         </>
     );
