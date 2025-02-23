@@ -12,7 +12,7 @@ import MotionDesign from "./pages/Services/Design/MotionDesign.jsx";
 import NicheServices from "./pages/Services/Design/NicheServices.jsx";
 import PrintDesign from "./pages/Services/Design/PrintDesign.jsx";
 import WebDesign from "./pages/Services/Design/WebDesign.jsx";
-import Development from "./pages/Services/Development/Development.jsx";
+import Website from "./pages/Services/Website/Website.jsx";
 import Management from "./pages/Services/Management/Management.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import UserForm from "./pages/Info/UserForm.jsx";
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             },
             { path: "/services/design/printdesign", element: <PrintDesign /> },
             { path: "/services/design/webdesign", element: <WebDesign /> },
-            { path: "/services/development", element: <Development /> },
+            { path: "/services/website", element: <Website /> },
             { path: "/services/management", element: <Management /> },
         ],
     },
