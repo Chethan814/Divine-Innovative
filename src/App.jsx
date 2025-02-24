@@ -14,7 +14,7 @@ import PrintDesign from "./pages/Services/Design/PrintDesign.jsx";
 import WebDesign from "./pages/Services/Design/WebDesign.jsx";
 import Website from "./pages/Services/Website/Website.jsx";
 import Management from "./pages/Services/Management/Management.jsx";
-import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import Packages from "./pages/Packages/Packages.jsx";
 import UserForm from "./pages/Info/UserForm.jsx";
 
 const router = createBrowserRouter([
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             { path: "/", element: <Home /> },
             { path: "/info", element: <UserForm /> },
             { path: "/aboutus", element: <Aboutus /> },
-            { path: "/portfolio", element: <Portfolio /> },
+            { path: "/Packages", element: <Packages /> },
             { path: "/services", element: <Services /> },
             { path: "/services/design", element: <Design /> },
             {
