@@ -14,7 +14,7 @@ function Footer() {
 
     // sm:bg-red-400 md:bg-blue-400 lg:bg-green-400 xl:bg-pink-400 2xl:bg-amber-400
     return (
-        <section className="font-gilroy text-center flex flex-col justify-center items-center w-[80vw] sm:w-[90vw] xl:w-[80vw] mx-auto my-20 p-2  || ">
+        <section className="font-gilroy text-center flex flex-col justify-center items-center w-[80vw] sm:w-[90vw] xl:w-[80vw] mx-auto mt-20 mb-5 p-2  || ">
             <div>
                 <h2 className="font-black  w-80 sm:w-auto text-4xl sm:text-5xl md:text-6xl">
                     {heading}
@@ -24,7 +24,7 @@ function Footer() {
                 <p>{description}</p>
             </div>
             <div>
-                <GradientButton button={true} GIT={true} navlinks={"aboutus"} />
+                <GradientButton button={true} GIT={true} navlinks="info" />
             </div>
             <div>
                 <FooterRights />
