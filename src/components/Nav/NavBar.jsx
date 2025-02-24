@@ -28,7 +28,7 @@ export default function NavBar() {
                             <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/Services">Services</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/Portfolio">Portfolio</NavLink>
+                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-5' : "" } to="/Packages">Packages</NavLink>
                         </li>
                     </ul>
                     <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 xl:translate-x-37 -translate-y-3 rounded-2xl" />
