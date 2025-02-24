@@ -49,12 +49,10 @@ function Aboutus() {
             List: {
                 Contents: true,
                 li: [
-                    "Web Interface",
-                    "User Experience",
                     "Web Design",
-                    "Wireframe",
-                    "Prototype",
                     "Development",
+                    "Maintenance",
+                    "Social Media Handling",
                 ],
             },
             Navlinks: "services/website",
