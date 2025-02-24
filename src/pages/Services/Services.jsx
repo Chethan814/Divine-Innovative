@@ -77,7 +77,7 @@ function Services() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                link={`Design`}
+                link={`aboutus`}
                 h1={`SERVICES`}
                 p={`A best-in-class mixture of technology and art in our projects captivate you with elegance and style of visuals, 
                     contents and interactions in our solutions. 
