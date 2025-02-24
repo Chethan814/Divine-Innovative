@@ -16,7 +16,13 @@ function Services() {
             Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
             List: {
                 Contents: true,
-                li: [],
+                li: [
+                    "Graphic Design",
+                    "Motion Design",
+                    "Print Design",
+                    "Niche Design",
+                     
+                    ],
             },
             Button: true,
             Navlinks: "services/design",
@@ -31,7 +37,7 @@ function Services() {
             Description: `Our projects are defined by a masterful combination of technology and creativity, captivating with stunning visuals, engaging content, and fluid interactions. The synergy between innovative vision and modern technology ensures a completely satisfying user experience in every web design and development solution we deliver.`,
             List: {
                 Contents: true,
-                li: ['Web Design', 'Web Development'],
+                li: ["Web Design", "Web Development"],
             },
             Button: true,
             Navlinks: "services/website",

@@ -5,32 +5,11 @@ import Footer from "../../../components/Footer/Footer";
 
 function Design() {
     const content = {
-        WebDesign: {
-            Services: {
-                Tagline: "Service",
-                indexNeeded: true,
-                index: "1",
-            },
-            Heading: `WEB DESIGN`,
-            Description: `We seamlessly blend cutting-edge technology and artistic prowess in our web design projects, ensuring your experience is both visually stunning and interactive. Our creative vision, infused with modern technological elements, guarantees a highly satisfying user journey across all our design solutions.`,
-            List: {
-                Contents: true,
-                li: [
-                    "Web Interface",
-                    "User Experience",
-                    "Design System",
-                    "Wireframe",
-                    "Prototype",
-                ],
-            },
-            Button: true,
-            Navlinks: "services/design/WebDesign",
-        },
         Graphic: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "2",
+                index: "1",
             },
             Heading: `GRAPHIC DESIGN`,
             Description: `Our banner design services seamlessly blend contemporary visual elements with advanced technological features to create striking and impactful banners. Each design is meticulously crafted to ensure maximum engagement and brand visibility. By integrating creative insights with modern design principles, we deliver banners that not only capture attention but also effectively communicate your brand message and values.`,
@@ -44,13 +23,13 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "services/design/GraphicDesign",
+            Navlinks: "info",
         },
         Motion: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "3",
+                index: "2",
             },
             Heading: `MOTION DESIGN`,
             Description: `Our motion design services bring your brand to life through dynamic visuals. We combine creativity and technology to deliver engaging and memorable motion graphics that capture your audience's attention. Whether it's for social media, advertising, or presentations, our designs ensure your message is conveyed with impact.`,
@@ -64,13 +43,13 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "services/design/MotionDesign",
+            Navlinks: "info",
         },
         NicheServices: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "4",
+                index: "3",
             },
             Heading: `NICHE SERVICES`,
             Description: `Our niche services cater to unique and specific design needs, providing customized solutions that set your brand apart. Whether it's custom QR code design or interactive PDFs, we deliver innovative and personalized services that enhance your brand's functionality and appeal.`,
@@ -84,13 +63,13 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "services/design/NicheServices",
+            Navlinks: "info",
         },
         Print: {
             Services: {
                 Tagline: "Service",
                 indexNeeded: true,
-                index: "5",
+                index: "4",
             },
             Heading: `PRINT DESIGN`,
             Description: `Our print design services ensure your brand is well-represented across all physical mediums. From event posters to wedding invitations, we create visually appealing and professionally designed print materials that leave a lasting impression.`,
@@ -104,7 +83,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "services/design/PrintDesign",
+            Navlinks: "info",
         },
     };
 
@@ -135,7 +114,7 @@ function Design() {
                     paired with the modern technology touch, 
                     render a completely satisfying user experience in every design solution we offer.`}
             />
-            {renderContentCard(content.WebDesign)}
+            {/* {renderContentCard(content.WebDesign)} */}
             {renderContentCard(content.Graphic)}
             {renderContentCard(content.Motion)}
             {renderContentCard(content.NicheServices)}

@@ -18,7 +18,7 @@ function Info(prop) {
                         className=" w-[80vw] md:w-[45vw] lg:w-[50vw] h-50 sm:h-75 lg:h-100 object-contain sm:object-cover md:object-contain rounded-3xl "
                     />
                 </div>
-                <div className="w-[80vw] -mt-10 md:w-[45vw] md:py-4 font-gilroy">
+                <div className="w-[80vw] md:-mt-10 md:w-[45vw] md:py-4 font-gilroy">
                     <div>
                         <p className=" text-[0.9rem] sm:text-[1.1rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.2rem] ">
                             {tagline}
