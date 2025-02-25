@@ -1,4 +1,4 @@
-import Logo from "/asstes/Logo/logo.png";
+import Logo from "/asstes/Logo/newLogo.png";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -11,7 +11,7 @@ export default function NavBar() {
                 <div>
                     <NavLink to="/" className="flex flex-row items-center xl:gap-4 ">
                         <div>
-                            <img src={Logo} alt="Logo" className="w-10 sm:w-12  xl:w-18" />
+                            <img src={Logo} alt="Logo" className="w-12 sm:w-14 xl:w-18 sm:-translate-y-2" />
                         </div>
                         <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem] lg:leading-5 lg:pl-2 xl:pl-0 ">
                             <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem] ">D</span>ivine <br />
