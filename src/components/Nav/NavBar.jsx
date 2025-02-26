@@ -1,4 +1,4 @@
-import Logo from "/asstes/Logo/newLogo.png";
+import Logo from "/asstes/Logo/BLACK-logo.png";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
