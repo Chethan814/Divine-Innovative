@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import Effect from "/asstes/hero-section/effects.png";
 import gradient from "/asstes/hero-section/gradient_2.png";
