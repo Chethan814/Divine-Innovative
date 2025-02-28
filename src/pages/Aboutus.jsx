@@ -4,9 +4,9 @@ import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
 import ContentCard from "../components/MainContent/ContentCard";
 import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
+// import Info from "../components/Info/Info";
 
-import SwiftRides from '../asstes/Project/Chethan/swiftrides.png'
+// import SwiftRides from '../asstes/Project/Chethan/swiftrides.png'
 
 const renderContentCard = (content) => (
     <ContentCard
@@ -60,7 +60,7 @@ function Aboutus() {
         },
     };
 
-    const Webdesign_description = `We excel at transforming your ideas, thoughts, and vision into custom web designs that showcase your business and turn prospects into clients. Our dedicated in-house team conducts thorough analyses to craft designs that effectively convey your business's identity, mission, and vision.`
+    // const Webdesign_description = `We excel at transforming your ideas, thoughts, and vision into custom web designs that showcase your business and turn prospects into clients. Our dedicated in-house team conducts thorough analyses to craft designs that effectively convey your business's identity, mission, and vision.`
 
     return (
         <>
@@ -79,7 +79,7 @@ function Aboutus() {
             
             {renderContentCard(content.Chethan)}
 
-            <Info image={SwiftRides} description={Webdesign_description} />
+            {/* <Info image={SwiftRides} description={Webdesign_description} /> */}
 
             <Footer />
         </>

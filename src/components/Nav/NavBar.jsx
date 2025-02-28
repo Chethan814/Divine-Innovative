@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 import Logo from "/asstes/Logo/BLACK-logo.png";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar() {
     return (
@@ -9,26 +12,69 @@ export default function NavBar() {
                 id="nav-bar"
             >
                 <div>
-                    <NavLink to="/" className="flex flex-row items-center xl:gap-4 ">
+                    <NavLink
+                        to="/"
+                        className="flex flex-row items-center xl:gap-4 "
+                    >
                         <div>
-                            <img src={Logo} alt="Logo" className="w-12 sm:w-14 xl:w-18 sm:-translate-y-2" />
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="w-12 sm:w-14 xl:w-18 sm:-translate-y-2"
+                            />
                         </div>
                         <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem] lg:leading-5 lg:pl-2 xl:pl-0 ">
-                            <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem] ">D</span>ivine <br />
-                            <span className="text-[1.3rem] md:text-[1.4rem] xl:text-[1.8rem]">I</span>nnovative
+                            <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem] ">
+                                D
+                            </span>
+                            ivine <br />
+                            <span className="text-[1.3rem] md:text-[1.4rem] xl:text-[1.8rem]">
+                                I
+                            </span>
+                            nnovative
                         </div>
                     </NavLink>
                 </div>
                 <div>
                     <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between xl:justify-start xl:items-start lg:gap-13   xl:pr-8  xl:translate-y-[0.1rem] xl:translate-x-15  font-gilroy-light text-[0.999rem] xl:text-[1.35rem]  ">
                         <li className=" ">
-                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/aboutus">About us</NavLink>{" "}
+                            <NavLink
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? " underline underline-offset-4"
+                                        : ""
+                                }
+                                to="/aboutus"
+                            >
+                                About us
+                            </NavLink>{" "}
                         </li>
                         <li>
-                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-4' : "" } to="/Services">Services</NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? " underline underline-offset-4"
+                                        : ""
+                                }
+                                to="/Services"
+                            >
+                                <div>
+                                    Services
+                                    {/* <FontAwesomeIcon className=" translate-y-[0.1rem] translate-x-1 text-[0.8rem] " icon={faAngleDown} /> */}
+                                </div>
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink className={({isActive})=> isActive ? ' underline underline-offset-5' : "" } to="/Packages">Packages</NavLink>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? " underline underline-offset-5"
+                                        : ""
+                                }
+                                to="/Packages"
+                            >
+                                Packages
+                            </NavLink>
                         </li>
                     </ul>
                     <hr className="hidden lg:block text-black rotate-90 w-9 translate-x-17 xl:translate-x-37 -translate-y-3 rounded-2xl" />
