@@ -34,7 +34,7 @@ function ContentCard({
             <div className="text-[0.8rem] pb-1">
                 {Tagline} {indexNeeded ? `0${index}` : ""}
             </div>
-            <div className="font-gilroy text-4xl sm:text-5xl">
+            <div className="font-gilroy text-4xl sm:text-5xl max-w-[35rem]">
                 <h2>{heading}</h2>
             </div>
             <div className="text-[0.9rem] sm:text-[1rem] text-left w-70 sm:w-75 md:w-[20rem] my-1 sm:mt-8">
