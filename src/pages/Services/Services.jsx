@@ -52,7 +52,17 @@ function Services() {
             Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
             List: {
                 Contents: true,
-                li: [],
+                li: [
+                    "DIGITAL MARKETING",
+                    "SOCIAL MEDIA MANAGEMENT",
+                    "SEO SERVICES",
+                    "AD DESIGN",
+                    "EMAIL MARKETING TEMPLATES",
+                    "BLOG SETUP AND CONTENT WRITING",
+                    "MARKETING ADVISOR",
+                    "MANAGEMENT SERVICES",
+                    
+                ],
             },
             Button: true,
             Navlinks: "services/management",

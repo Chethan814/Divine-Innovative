@@ -31,7 +31,7 @@ function Website() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
         Development: {
             Services: {
@@ -51,7 +51,7 @@ function Website() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
     };
     const renderContentCard = (content) => (

@@ -23,7 +23,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
         Motion: {
             Services: {
@@ -43,7 +43,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
         NicheServices: {
             Services: {
@@ -63,7 +63,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
         Print: {
             Services: {
@@ -83,7 +83,7 @@ function Design() {
                 ],
             },
             Button: true,
-            Navlinks: "info",
+            Navlinks: "Packages",
         },
     };
 
