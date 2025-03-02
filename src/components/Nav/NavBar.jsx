@@ -42,7 +42,7 @@ export default function NavBar() {
                 <div
                     className={`${
                         phoneNav
-                            ? "bg-white w-[100vw] overflow-hidden h-[100vh] absolute top-0 left-0 sm:bg-transparent sm:hidden"
+                            ? "bg-white z-100 w-[100vw] overflow-hidden h-[100vh] absolute top-0 left-0 sm:bg-transparent sm:hidden"
                             : "hidden"
                     }`}
                 >
