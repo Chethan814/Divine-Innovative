@@ -2,7 +2,7 @@
 import Logo from "/asstes/Logo/BLACK-logo.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar() {
     return (
@@ -20,7 +20,7 @@ export default function NavBar() {
                             <img
                                 src={Logo}
                                 alt="Logo"
-                                className="w-12 sm:w-14 xl:w-18 sm:-translate-y-2"
+                                className="w-15 sm:w-13 xl:w-12  -translate-x-13 sm:-translate-y-2"
                             />
                         </div>
                         <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem] lg:leading-5 lg:pl-2 xl:pl-0 ">
@@ -36,7 +36,12 @@ export default function NavBar() {
                     </NavLink>
                 </div>
                 <div>
-                    <ul className="w-57 lg:w-auto xl:w- flex items-center justify-between xl:justify-start xl:items-start lg:gap-13   xl:pr-8  xl:translate-y-[0.1rem] xl:translate-x-15  font-gilroy-light text-[0.999rem] xl:text-[1.35rem]  ">
+                    <div className="sm:hidden translate-x-8">
+                        <span className=" text-3xl ">
+                            <FontAwesomeIcon icon={faBars} />
+                        </span>
+                    </div>
+                    <ul className=" hidden w-57 lg:w-auto  sm:flex items-center justify-between xl:justify-start xl:items-start lg:gap-13   xl:pr-8  xl:translate-y-[0.1rem] xl:translate-x-15  font-gilroy-light text-[0.999rem] xl:text-[1.35rem]  ">
                         <li className=" ">
                             <NavLink
                                 className={({ isActive }) =>
