@@ -7,7 +7,7 @@ const GradientButton = ({ button, GIT, navlinks = "" }) => {
 
     return (
         <NavLink to={`/${navlinks}`}>
-            <button className="font-poppins font-normal xl:text-[22px] my-6 xl:mt-8 lg:translate-x-7 xl:translate-x-0 py-2 px-4 rounded-[8px] xl:w-[13vw] max-w-45 xl:h-[3.4rem] transition hover:scale-105 sm:bg-gradient-to-r from-[#F8DCE0] via-[#E6E0FE] to-[#F5D6FA]">
+            <button className="font-poppins font-normal xl:text-[26px] my-6 xl:mt-9 py-3 px-6  lg:translate-x-7 xl:translate-x-0 rounded-[8px] xl:w-[13vw] max-w-45 xl:h-[3.4rem] transition hover:scale-105 bg-gradient-to-r from-[#F8DCE0] via-[#E6E0FE] to-[#F5D6FA]">
                 {GIT ? "Get in Touch" : "Learn more"}
             </button>
         </NavLink>
