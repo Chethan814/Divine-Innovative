@@ -22,9 +22,8 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
                     />
                 </div>
                 {/* <HeroCard requied={card} /> */}
-                <div className=" hidden sm:block">
+
                 <Rights rMain={main} />
-                </div>
             </div>
         </div>
     );
