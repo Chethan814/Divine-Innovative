@@ -11,7 +11,7 @@ import icon6 from "/asstes/hero-section/shaps/svg/Ornament6.svg";
 import icon7 from "/asstes/hero-section/shaps/svg/Ornament7.svg";
 import icon8 from "/asstes/hero-section/shaps/svg/Ornament8.svg";
 
-import phone from '/asstes/hero-section/phoneview/phoneDesign4.png'
+import phone from '/asstes/hero-section/phoneview/phoneDesign5.svg'
 
 export default function Minimalistic(){
     return (
