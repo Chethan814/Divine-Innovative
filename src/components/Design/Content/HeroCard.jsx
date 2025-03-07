@@ -27,7 +27,7 @@ export default function HeroCard(props) {
     }
     return (
         <>
-            <div className=" lg:ml-16 xl:mt-35 block sm:hidden lg:block">
+            <div className=" lg:ml-16 xl:mt-35 block hidden lg:block">
                 <div className="flex flex-col md:flex-row justify-evenly">
                     <HeroCarditems
                         logo={logo1}

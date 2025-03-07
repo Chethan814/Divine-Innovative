@@ -3,7 +3,7 @@
 
 function Info({ image, description, heading = 'DIFFERENT', tagline = 'what makes us' }) {
     return (
-        <div className="overflow-x-hidden -mt-18 -mb-14 -z-0">
+        <div className="-mt-18 -mb-14 z-0">
             <section className="lg:translate-x-5 xl:translate-x-25 flex flex-col md:flex-row justify-center items-center xl:w-full">
                 <div className="w-[80vw] md:w-[45vw] lg:w-[50vw] lg:mr-10">
                     <img

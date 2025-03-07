@@ -1,5 +1,3 @@
-// import React from "react";
-
 import Effect from "/asstes/hero-section/effects.png";
 import gradient from "/asstes/hero-section/gradient_2.png";
 import icon1 from "/asstes/hero-section/shaps/svg/Ornament1.svg";
@@ -11,7 +9,6 @@ import icon6 from "/asstes/hero-section/shaps/svg/Ornament6.svg";
 import icon7 from "/asstes/hero-section/shaps/svg/Ornament7.svg";
 import icon8 from "/asstes/hero-section/shaps/svg/Ornament8.svg";
 
-import phone from '/asstes/hero-section/phoneview/phoneDesign5.svg'
 
 export default function Minimalistic(){
     return (
@@ -41,9 +38,6 @@ export default function Minimalistic(){
                             alt="gradient image"
                             className="w-[80vw] sm:w-[45vw] md:w-[24rem] lg:w-[28rem] xl:w-[50vw] 2xl:w-[47rem] sm:h-[80vh]  md:h-auto lg:max-h-none lg:h-[100vh] xl:h-[150vh] md:max-h-[36rem] 2xl:h-[72rem]  rounded-4xl"
                         />
-                    </div>
-                    <div className="sm:hidden my-10 ">
-                        <img src={phone} alt="" />
                     </div>
                 </div>
         </>

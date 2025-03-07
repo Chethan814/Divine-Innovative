@@ -8,13 +8,13 @@ export default function HeadingPara({
     pMain = false,
 }) {
     return (
-        <section className="md:w-full text-left">
+        <section className="md:w-full text-left font-[Gilroy] ">
             <div>
                 <h1
-                    className={`font-gilroy-semibold text-[34px] mt-14 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
+                    className={` font-[800] mt-8 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
                         hMain
-                            ? "text-[2.3rem] lg:text-5xl xl:text-7xl lg:leading-14 xl:leading-20 xl:w-[47vw]"
-                            : "text-[2.6rem] md:text-6xl xl:text-8xl text-stroke"
+                            ? "text-4xl sm:text-[2.3rem] lg:text-5xl xl:text-7xl leading-10 lg:leading-14 xl:leading-20 xl:w-[47vw]"
+                            : "text-5xl sm:text-[2.6rem] md:text-6xl xl:text-8xl text-stroke"
                     }`}
                 >
                     {heading}

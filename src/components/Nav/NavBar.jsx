@@ -1,11 +1,11 @@
-import PhoneNav from "./PhoneNav";
+
 import Logo from "/asstes/Logo/BLACK-logo.png";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
     return (
         <div
-            className="w-[85vw] sm:w-[45vw] md:w-[40vw] lg:w-[45vw] xl:w-auto 2xl:w-[50rem] xl:h-[10vh] mt-8 xl:mt-3 mx-auto sm:mx-0 sm:mt-12 lg:px-4 xl:ml-8 xl:pl-2 flex items-center justify-around lg:justify-between 2xl:justify-around"
+            className="w-full sm:w-[45vw] md:w-[40vw] lg:w-[45vw] xl:w-auto 2xl:w-[50rem] xl:h-[10vh] mt-8 xl:mt-3 mx-auto sm:mx-0 sm:mt-12 lg:px-4 xl:ml-8 xl:pl-2 flex items-center justify-around lg:justify-between 2xl:justify-around"
             id="nav-bar"
         >
             <NavLink to="/" className="flex flex-row items-center xl:gap-4">
@@ -26,9 +26,9 @@ export default function NavBar() {
                 </div>
             </NavLink>
             <div>
-                <div>
+                {/* <div>
                     <PhoneNav />
-                </div>
+                </div> */}
                 <ul className="hidden sm:w-57 lg:w-auto sm:flex items-center justify-between xl:justify-start xl:items-start lg:gap-13 xl:pr-8 xl:translate-y-[0.1rem] xl:translate-x-15 font-gilroy-light text-[0.999rem] xl:text-[1.35rem]">
                     <li>
                         <NavLink

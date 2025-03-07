@@ -13,76 +13,77 @@ function PhoneNav() {
 
     return (
         <>
-            <div className="sm:hidden translate-x-8">
-                <span className="text-3xl" onClick={handleNavToggle}>
-                    <FontAwesomeIcon icon={faBars} />
-                </span>
-            </div>
-            <div
-                className={`${
-                    isNavOpen
-                        ? "bg-white z-100 w-[100vw] overflow-hidden h-[100vh] absolute top-0 left-0 sm:bg-transparent sm:hidden"
-                        : "hidden"
-                }`}
-            >
-                <div className="absolute right-8 top-8">
-                    <span className="text-4xl" onClick={handleNavToggle}>
-                        <FontAwesomeIcon icon={faXmark} />
+            <div>
+                <div className="sm:hidden z-100 absolute right-11 top-9 ">
+                    <span className="text-3xl" onClick={handleNavToggle}>
+                        <FontAwesomeIcon icon={faBars} />
                     </span>
                 </div>
-                <div className="w-full h-full">
-                    <ul className="w-full h-full flex flex-col items-center justify-center gap-13 text-2xl font-bold">
-                        <li>
-                            <NavLink
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "underline underline-offset-4"
-                                        : ""
-                                }
-                                to="/"
-                                end
-                            >
-                                Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "underline underline-offset-4"
-                                        : ""
-                                }
-                                to="/aboutus"
-                            >
-                                About us
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "underline underline-offset-4"
-                                        : ""
-                                }
-                                to="/Services"
-                            >
-                                Services
-                            </NavLink>
-                           
-                        </li>
-                        <li>
-                            <NavLink
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? "underline underline-offset-5"
-                                        : ""
-                                }
-                                to="/Packages"
-                            >
-                                Packages
-                            </NavLink>
-                        </li>
-                    </ul>
+                <div
+                    className={`${
+                        isNavOpen
+                            ? "bg-white absolute z-100 w-full h-full top-0 left-0 sm:bg-transparent sm:hidden"
+                            : "hidden"
+                    }`}
+                >
+                    <div className=" translate-x-[80vw] translate-y-7">
+                        <span className="text-4xl" onClick={handleNavToggle}>
+                            <FontAwesomeIcon icon={faXmark} />
+                        </span>
+                    </div>
+                    <div className="h-[100vw] w-full   ">
+                        <ul className="h-[100vw] w-full flex flex-col items-center justify-center gap-13 text-2xl font-bold">
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "underline underline-offset-4"
+                                            : ""
+                                    }
+                                    to="/"
+                                    end
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "underline underline-offset-4"
+                                            : ""
+                                    }
+                                    to="/aboutus"
+                                >
+                                    About us
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "underline underline-offset-4"
+                                            : ""
+                                    }
+                                    to="/Services"
+                                >
+                                    Services
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "underline underline-offset-5"
+                                            : ""
+                                    }
+                                    to="/Packages"
+                                >
+                                    Packages
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
