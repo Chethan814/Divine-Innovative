@@ -6,6 +6,9 @@ import HeadingPara from "./Content/HeadingPara";
 import HeroCard from "./Content/HeroCard";
 // import Rights from "./Content/Rights";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
     return (
         <div
@@ -14,13 +17,18 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
         >
             <div className="flex flex-col justify-start xl:items-start -translate-x-1 sm:-translate-x-0">
                 <HeadingPara heading={h1} hMain={main} para={p} pMain={main} />
-                <div className="">
+                <div className="flex">
                     <GradientButton
                         GIT={buttonGIT}
                         button={button}
                         navlinks={link}
                     />
-                    
+                    <button className="ml-5 font-[Gilroy] ">
+                        Learn more
+                        <span className="pl-1  font-black text-[1rem]">
+                            <FontAwesomeIcon icon={faArrowRight} />
+                        </span>
+                    </button>
                 </div>
 
                 {/* <Rights rMain={main} /> */}

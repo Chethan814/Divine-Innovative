@@ -11,9 +11,9 @@ export default function HeadingPara({
         <section className={` md:w-full text-left font-[Gilroy] ${hMain ? '-translate-x-1' : " "} `}>
             <div>
                 <h1
-                    className={` font-[800] mt-4 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
+                    className={` font-[800] mt-5 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
                         hMain
-                            ? "text-2xl sm:text-[2.3rem] lg:text-5xl xl:text-7xl leading-10 lg:leading-14 xl:leading-20 xl:w-[47vw] "
+                            ? "text-3xl sm:text-[2.3rem] lg:text-5xl xl:text-7xl leading-10 lg:leading-14 xl:leading-20 w-[22rem] xl:w-[47vw] -translate-x-3 "
                             : " mt-8 text-5xl sm:text-[2.6rem] md:text-6xl xl:text-8xl text-stroke"
                     }`}
                 >
