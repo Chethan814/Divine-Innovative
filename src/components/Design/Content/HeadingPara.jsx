@@ -8,12 +8,12 @@ export default function HeadingPara({
     pMain = false,
 }) {
     return (
-        <section className={` md:w-full text-left font-[Gilroy] ${hMain ? '-translate-x-1' : " "} `}>
+        <section className={` md:w-full text-left font-gilroy-semibold ${hMain ? '-translate-x-1' : " "} `}>
             <div>
                 <h1
-                    className={` font-[800] mt-5 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
+                    className={` font-bold sm:font-medium mt-5 sm:mt-17 xl:mt-0 md:max-w-80 lg:max-w-110 xl:max-w-140 xl:w-140 ${
                         hMain
-                            ? "text-3xl sm:text-[2.3rem] lg:text-5xl xl:text-7xl leading-10 lg:leading-14 xl:leading-20 w-[22rem] xl:w-[47vw] -translate-x-3 sm:-translate-x-0 "
+                            ? "text-3xl sm:text-[2.3rem] lg:text-5xl xl:text-7xl leading-10 lg:leading-14 xl:leading-20 w-[22rem] lg:w-[35rem] xl:w-[47vw] -translate-x-3 sm:-translate-x-0 "
                             : " mt-8 text-5xl sm:text-[2.6rem] md:text-6xl xl:text-8xl text-stroke"
                     }`}
                 >
