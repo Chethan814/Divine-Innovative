@@ -14,12 +14,13 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
         >
             <div className="flex flex-col justify-start xl:items-start -translate-x-1 sm:-translate-x-0">
                 <HeadingPara heading={h1} hMain={main} para={p} pMain={main} />
-                <div className="sm:w-[45vw] md:w-[37vw] lg:mr-14">
+                <div className="">
                     <GradientButton
                         GIT={buttonGIT}
                         button={button}
                         navlinks={link}
                     />
+                    
                 </div>
 
                 {/* <Rights rMain={main} /> */}

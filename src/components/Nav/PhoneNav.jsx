@@ -26,12 +26,12 @@ function PhoneNav() {
                             : "hidden"
                     }`}
                 >
-                    <div className=" translate-x-[80vw] translate-y-7">
+                    <div className=" translate-x-[80vw] translate-y-7 w-5">
                         <span className="text-4xl" onClick={handleNavToggle}>
                             <FontAwesomeIcon icon={faXmark} />
                         </span>
                     </div>
-                    <div className="h-[100vw] w-full   ">
+                    <div className="h-[100vw] w-full translate-y-20  ">
                         <ul className="h-[100vw] w-full flex flex-col items-center justify-center gap-13 text-2xl font-bold">
                             <li>
                                 <NavLink

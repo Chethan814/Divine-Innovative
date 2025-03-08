@@ -12,7 +12,7 @@ export default function NavBar() {
                 <img
                     src={Logo}
                     alt="Logo"
-                    className="w-13 sm:w-13 xl:w-12 -translate-x-13 sm:translate-x-0 sm:-translate-y-2"
+                    className="w-10 sm:w-13 xl:w-12 -translate-x-13 sm:translate-x-0 sm:-translate-y-2"
                 />
                 <div className="hidden lg:block font-gilroy-semibold text-[1rem] xl:text-[1.6rem] md:-translate-y-[0.16rem] xl:-translate-y-[0.1rem] lg:leading-5 lg:pl-2 xl:pl-0">
                     <span className="text-[1.3rem] md:text-[1.5rem] xl:text-[2rem]">
