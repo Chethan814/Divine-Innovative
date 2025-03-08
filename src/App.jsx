@@ -16,11 +16,13 @@ import Website from "./pages/Services/Website/Website.jsx";
 import Management from "./pages/Services/Management/Management.jsx";
 import Packages from "./pages/Packages/Packages.jsx";
 import UserForm from "./pages/Info/UserForm.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />,
+        errorElement : <ErrorPage /> ,
         children: [
             { path: "/", element: <Home /> },
             { path: "/info", element: <UserForm /> },
