@@ -24,7 +24,7 @@ export default function HeadingPara({
                 <p
                     className={`font-gilroy xl:max-w-140 ${
                         pMain
-                            ? "font-normal text-[17px] lg:text-[1.4rem] xl:text-2xl mt-2 lg:mt-4 -translate-x-3 sm:-translate-x-"
+                            ? "font-normal text-[17px] lg:text-[1.4rem] xl:text-2xl mt-2 lg:mt-4 -translate-x-3 sm:-translate-x-0 "
                             : "font-light mt-8 text-[1rem] xl:text-[1.69rem] w-70 md:w-[34vw] md:leading-7 xl:leading-10"
                     }`}
                 >
