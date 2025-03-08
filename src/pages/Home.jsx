@@ -2,13 +2,17 @@
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
-import Info from "../components/Info/Info";
-import Swift from "../asstes/Project/Chethan/swiftrides.png";
 import Footer from "../components/Footer/Footer";
-// import PhoneNav from "../components/Nav/PhoneNav";
+import Card_1 from "../components/Cards/Card_1";
+import FeaturesSection from "../components/Cards/FeaturesCard";
+import ReviewsSection from "../components/Testimonial/Reviews";
+import CTASection from "../components/CTA/CTA";
+import FAQ from "../components/Testimonial/FAQ";
+// import TestimonialSlider from "../components/Testimonials/Testimonials";
+import FeaturedCaseStudy from './../components/Cards/Benefits';
 
 function Home() {
-    const Webdesign_description = `We excel at transforming your ideas, thoughts, and vision into custom web designs that showcase your business and turn prospects into clients. Our dedicated in-house team conducts thorough analyses to craft designs that effectively convey your business's identity, mission, and vision.`;
+    // const Webdesign_description = `We excel at transforming your ideas, thoughts, and vision into custom web designs that showcase your business and turn prospects into clients. Our dedicated in-house team conducts thorough analyses to craft designs that effectively convey your business's identity, mission, and vision.`;
 
     return (
         <>
@@ -27,11 +31,14 @@ function Home() {
                 link={`info`}
                 card={true}
             />
-            {/* <PhoneNav /> */}
-            <div className="my-20">
-                <Info image={Swift} description={Webdesign_description} />
-            </div>
-            
+            <Card_1 />
+            <FeaturesSection />
+            <FeaturedCaseStudy />
+            <ReviewsSection />
+            <FAQ />
+            <CTASection />
+            {/* <TestimonialSlider /> */}
+
             <Footer />
         </>
     );
