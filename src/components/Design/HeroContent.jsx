@@ -18,7 +18,7 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
         >
             <div className="flex flex-col justify-start xl:items-start -translate-x-1 sm:-translate-x-0">
                 <HeadingPara heading={h1} hMain={main} para={p} pMain={main} />
-                <div className="flex -translate-x-4 sm:-translate-x-0">
+                <div className={`flex ${main ? '-translate-x-4 sm:-translate-x-0' : ' '}`}>
                     <GradientButton
                         GIT={buttonGIT}
                         button={button}
