@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const CallToAction = () => {
     return (
         <section className="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-gilroy">
@@ -5,7 +7,7 @@ const CallToAction = () => {
                 <div className="sm:text-center lg:text-left">
                     <h1 className="text-4xl tracking-tight font-extrabold text-black sm:text-5xl md:text-6xl">
                         <span className="block xl:inline">
-                            Skills to enrich <br /> your
+                            Skills to enrich <br className="hidden xl:block" /> your
                         </span>
                         <span className="block text-stroke xl:inline pl-1">
                             online business
@@ -18,20 +20,20 @@ const CallToAction = () => {
                     {/* Button Section */}
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                         <div className="rounded-md shadow">
-                            <a
-                                href="#"
+                            <NavLink
+                                to="/info"
                                 className="w-full  flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md   md:py-4 md:text-lg md:px-10 bg-gradient-to-r from-[#F8DCE0] via-[#E6E0FE] to-[#F5D6FA]"
                             >
                                 Get started
-                            </a>
+                            </NavLink>
                         </div>
                         <div className="mt-3 sm:mt-0 sm:ml-3">
-                            <a
-                                href="#"
+                            <NavLink
+                                to="/aboutus"
                                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md  bg-gray-100 md:py-4 md:text-lg md:px-10"
                             >
-                                Live demo <span className="ml-2">&#8594;</span>
-                            </a>
+                                Learn more <span className="ml-2">&#8594;</span>
+                            </NavLink>
                         </div>
                     </div>
                     {/* End of Button Section */}
