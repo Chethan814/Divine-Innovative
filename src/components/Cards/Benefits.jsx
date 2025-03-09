@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const FeaturedCaseStudy = () => {
     return (
         <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white">
@@ -13,7 +15,7 @@ const FeaturedCaseStudy = () => {
                                     <div className="h-full">
                                         <img
                                             className="h-full object-cover"
-                                            src="https://inviqa.com/sites/default/files/styles/pullout/public/2020-08/XD-1.jpeg?h=f75d236a&itok=PBoXPDmW"
+                                            src="https://images.unsplash.com/photo-1540760938999-077b8231d890?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                             width="733"
                                             height="412"
                                             alt="CXcon Experience Transformation"
@@ -24,33 +26,36 @@ const FeaturedCaseStudy = () => {
                         </div>
 
                         {/* Content Section */}
-                        <div className="p-6 bg-gray-100">
+                        <div className="p-6 bg-[#fce2fd]">
                             <div className="leading-relaxed">
                                 <h2 className="leading-tight text-4xl font-bold">
-                                    CXcon: Experience Transformation
+                                    Collaborate. Innovate. Grow. With Divine
+                                    Innovative.
                                 </h2>
                                 <p className="mt-4">
-                                    Our second CXcon in October was dedicated to
-                                    experience transformation. The free one-day
-                                    virtual event&nbsp; brought together 230+
-                                    heads of digital, thought leaders, and UX
-                                    practitioners to discuss all aspects of
-                                    experience design.
+                                    We bring together thought leaders and
+                                    practitioners to deliver exceptional digital
+                                    experiences. Join us to explore the
+                                    possibilities of design, development, and
+                                    strategic management, all tailored to drive
+                                    your business growth.
                                 </p>
                                 <p className="mt-4">
-                                    In a jam-packed day filled with keynote
-                                    sessions, panels, and virtual networking, we
-                                    explored topics including design leadership,
-                                    UX ethics, designing for emotion, and
-                                    innovation at scale.
+                                    We believe in a partnership approach,
+                                    working closely with you to understand your
+                                    unique needs and challenges. Our integrated
+                                    services in design, development, and
+                                    management are designed to deliver
+                                    measurable results, ensuring your digital
+                                    investments translate into tangible success.
                                 </p>
                                 <p className="mt-4">
-                                    <a
-                                        className="inline-block px-5 py-3 mt-4 text-white bg-teal-600 rounded-md transition hover:bg-teal-700"
-                                        href="https://inviqa.com/cxcon-experience-transformation"
+                                    <NavLink
+                                        className="inline-block px-5 py-3 mt-4 text-black font-semibold  rounded-md transition bg-[#fa4e71]"
+                                        to="aboutus"
                                     >
-                                        Explore this event
-                                    </a>
+                                        See Our Case Studies
+                                    </NavLink>
                                 </p>
                             </div>
                         </div>
