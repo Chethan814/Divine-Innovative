@@ -17,17 +17,18 @@ import Management from "./pages/Services/Management/Management.jsx";
 import Packages from "./pages/Packages/Packages.jsx";
 import UserForm from "./pages/Info/UserForm.jsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
+import DesignPackages from "./pages/Packages/DesignPackages.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />,
-        errorElement : <ErrorPage /> ,
+        errorElement: <ErrorPage />,
         children: [
             { path: "/", element: <Home /> },
             { path: "/info", element: <UserForm /> },
             { path: "/aboutus", element: <Aboutus /> },
-            { path: "/Packages", element: <Packages /> },
+
             { path: "/services", element: <Services /> },
             { path: "/services/design", element: <Design /> },
             {
@@ -46,6 +47,9 @@ const router = createBrowserRouter([
             { path: "/services/design/webdesign", element: <WebDesign /> },
             { path: "/services/website", element: <Website /> },
             { path: "/services/management", element: <Management /> },
+
+            { path: "/Packages", element: <Packages /> },
+            { path: "/Packages/design", element: <DesignPackages /> },
         ],
     },
 ]);
