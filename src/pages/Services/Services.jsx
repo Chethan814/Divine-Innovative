@@ -49,7 +49,7 @@ function Services() {
                 index: "1",
             },
             Heading: `MANAGEMENT`,
-            Description: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
+            Description: `We craft digital experiences that amaze. Expect stunning visuals, engaging content, and seamless interactions in every web project. Follow us to see how we blend technology and creativity for a truly captivating online presence.`,
             List: {
                 Contents: true,
                 li: [
