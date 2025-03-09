@@ -25,7 +25,7 @@ let FeaturesList = [
 
 const FeaturesSection = () => {
     return (
-        <section className="py-16 my-16 bg-gray-100">
+        <section className="py-16 my-16 bg-gray-100 font-gilroy">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">
                     Our Services
