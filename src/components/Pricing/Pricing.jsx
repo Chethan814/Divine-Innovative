@@ -2,12 +2,12 @@
 
 const PricingCard = ({ title, description, price, features }) => {
   return (
-    <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+    <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow xl:p-8">
       <h3 className="mb-4 text-2xl font-semibold">{title}</h3>
-      <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">{description}</p>
+      <p className="font-light sm:text-lg">{description}</p>
       <div className="flex items-baseline justify-center my-8">
         <span className="mr-2 text-5xl font-extrabold">${price}</span>
-        <span className="text-gray-500 dark:text-gray-400">/month</span>
+        <span>/month</span>
       </div>
       <ul className="mb-8 space-y-4 text-left">
         {features.map((feature, index) => (
@@ -38,47 +38,20 @@ const PricingCard = ({ title, description, price, features }) => {
   );
 };
 
-const PricingSection = () => {
-  const pricingPlans = [
-    {
-      title: "Starter",
-      description: "Best option for personal use & your next project.",
-      price: 29,
-      features: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 1 developer",
-        "Premium support: 6 months",
-        "Free updates: 6 months"
-      ]
-    },
-    {
-      title: "Company",
-      description: "Relevant for multiple users, extended & premium support.",
-      price: 99,
-      features: [
-        "Individual configuration",
-        "No setup, or hidden fees",
-        "Team size: 10 developers",
-        "Premium support: 24 months",
-        "Free updates: 24 months"
-      ]
-    }
-  ];
-
+const PricingSection = ({ Plans }) => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="font-gilroy">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-          <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-3xl font-extrabold tracking-tight">
             Designed for business teams like yours
           </h2>
           <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
             Here at Landwind we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
           </p>
         </div>
-        <div className="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
-          {pricingPlans.map((plan, index) => (
+        <div className="space-y-8 sm:space-y-0 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {Plans.map((plan, index) => (
             <PricingCard key={index} {...plan} />
           ))}
         </div>
