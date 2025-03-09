@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 // import { NavLink } from "react-router-dom";
 
+
 const ReviewCard = ({ name, review, rating }) => {
     return (
         <blockquote className="flex flex-col justify-between bg-white p-6 shadow-md sm:p-8 rounded-lg">
             <div>
-                <div className="flex gap-1 text-green-500">
+                <div className="flex gap-1 text-[#E484CB]">
                     {[...Array(rating)].map((_, i) => (
                         <svg
                             key={i}
@@ -20,7 +21,7 @@ const ReviewCard = ({ name, review, rating }) => {
                 </div>
 
                 <div className="mt-4">
-                    <p className="text-xl font-bold text-rose-600">{name}</p>
+                    <p className="text-xl font-bold text-black">{name}</p>
                     <p className="mt-3 text-gray-700 leading-relaxed text-sm sm:text-base">
                         {review}
                     </p>
@@ -57,8 +58,8 @@ const ReviewsSection = () => {
     ];
 
     return (
-        <section className="bg-gray-50">
-            <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <section className="bg-gray-50 ">
+            <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 md:w-[90vw]">
                 <div className="md:flex md:items-end md:justify-between">
                     <div className="max-w-xl">
                         <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
