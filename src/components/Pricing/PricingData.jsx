@@ -19,31 +19,63 @@ const pricingPlans = {
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
     ],
-    Web: [
+    Motion: [
         {
-            title: "Basic Web Design",
-            description: "Great for personal websites and blogs.",
+            title: "Basic Motion Design",
+            description: "Great for personal Motionsites and blogs.",
             price: "300",
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
         {
-            title: "Advanced Web Design",
+            title: "Advanced Motion Design",
             description: "Suitable for small to medium-sized businesses.",
             price: "500",
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
-    ],
-    SocialMedia: [
         {
-            title: "Basic Social Media Design",
-            description: "Perfect for small social media campaigns.",
+            title: "Premium Motion Design",
+            description: "Best for comprehensive design solutions.",
+            price: "300",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+    ],
+    NicheServices: [
+        {
+            title: "Basic Niche Services",
+            description: "Perfect for small NicheServices campaigns.",
             price: "150",
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
         {
-            title: "Advanced Social Media Design",
-            description: "Ideal for larger social media strategies.",
+            title: "Advanced Niche Services",
+            description: "Ideal for larger NicheServices strategies.",
             price: "250",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Premium Niche Services",
+            description: "Best for comprehensive design solutions.",
+            price: "300",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+    ],
+    Print: [
+        {
+            title: "Basic Print Design",
+            description: "Perfect for small Print campaigns.",
+            price: "150",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Advanced Print Design",
+            description: "Ideal for larger Print strategies.",
+            price: "250",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Premium Print Design",
+            description: "Best for comprehensive design solutions.",
+            price: "300",
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
     ],
