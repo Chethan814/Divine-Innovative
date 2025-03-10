@@ -79,6 +79,46 @@ const pricingPlans = {
             features: ["Feature 1", "Feature 2", "Feature 3"],
         },
     ],
+    WebDesign: [
+        {
+            title: "Basic Web Design",
+            description: "Perfect for small Web campaigns.",
+            price: "150",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Advanced Web Design",
+            description: "Ideal for larger Web strategies.",
+            price: "250",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Premium Web Design",
+            description: "Best for comprehensive design solutions.",
+            price: "300",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+    ],
+    Development: [
+        {
+            title: "Basic Development",
+            description: "Perfect for small Web campaigns.",
+            price: "150",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Advanced Development",
+            description: "Ideal for larger Web strategies.",
+            price: "250",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+        {
+            title: "Premium Development",
+            description: "Best for comprehensive design solutions.",
+            price: "300",
+            features: ["Feature 1", "Feature 2", "Feature 3"],
+        },
+    ],
 };
 
 export default pricingPlans;

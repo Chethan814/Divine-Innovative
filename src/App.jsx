@@ -18,6 +18,7 @@ import Packages from "./pages/Packages/Packages.jsx";
 import UserForm from "./pages/Info/UserForm.jsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 import DesignPackages from "./pages/Packages/DesignPackages.jsx";
+import WebsitePackages from "./pages/Packages/WebsitePackages.jsx";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,7 @@ const router = createBrowserRouter([
 
             { path: "/Packages", element: <Packages /> },
             { path: "/Packages/design", element: <DesignPackages /> },
+            { path: "/Packages/Development", element: <WebsitePackages /> },
         ],
     },
 ]);
