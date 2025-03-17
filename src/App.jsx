@@ -15,10 +15,11 @@ import WebDesign from "./pages/Services/Design/WebDesign.jsx";
 import Website from "./pages/Services/Website/Website.jsx";
 import Management from "./pages/Services/Management/Management.jsx";
 import Packages from "./pages/Packages/Packages.jsx";
-import UserForm from "./pages/Info/UserForm.jsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 import DesignPackages from "./pages/Packages/DesignPackages.jsx";
 import WebsitePackages from "./pages/Packages/WebsitePackages.jsx";
+// import ContactForm from "./pages/Info/UserForm.jsx";
+import GetInTouchForm from "./pages/Info/GetIntouchForm.jsx";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
             { path: "/", element: <Home /> },
-            { path: "/info", element: <UserForm /> },
+            { path: "/info", element: <GetInTouchForm />  },
             { path: "/aboutus", element: <Aboutus /> },
 
             { path: "/services", element: <Services /> },
