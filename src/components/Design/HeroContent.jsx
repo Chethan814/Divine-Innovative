@@ -18,14 +18,18 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
         >
             <div className="flex flex-col justify-start xl:items-start -translate-x-1 sm:-translate-x-0">
                 <HeadingPara heading={h1} hMain={main} para={p} pMain={main} />
-                <div className={`flex ${main ? '-translate-x-4 sm:-translate-x-0' : ' '}`}>
+                <div
+                    className={`flex ${
+                        main ? "-translate-x-4 sm:-translate-x-0" : " "
+                    }`}
+                >
                     <GradientButton
                         GIT={buttonGIT}
                         button={button}
                         navlinks={link}
                     />
                     <button className="ml-5 font-[Gilroy] sm:hidden ">
-                        <NavLink to='/aboutus'>
+                        <NavLink to="/aboutus">
                             Learn more
                             <span className="pl-1  font-black text-[1rem]">
                                 <FontAwesomeIcon icon={faArrowRight} />
@@ -34,7 +38,6 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
                     </button>
                 </div>
 
-                {/* <Rights rMain={main} /> */}
                 <HeroCard requied={main} />
             </div>
         </div>
