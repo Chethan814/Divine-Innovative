@@ -24,7 +24,7 @@ function Footer() {
                 <p>{description}</p>
             </div>
             <div>
-                <GradientButton button={true} GIT={true} navlinks="info" />
+                <GradientButton button={true} GIT={true} navlinks="contact" />
             </div>
             <div>
                 <FooterRights />

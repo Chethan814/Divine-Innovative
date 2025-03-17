@@ -21,7 +21,7 @@ const CallToAction = () => {
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                         <div className="rounded-md shadow">
                             <NavLink
-                                to="/info"
+                                to="/contact"
                                 className="w-full  flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md   md:py-4 md:text-lg md:px-10 bg-gradient-to-r from-[#F8DCE0] via-[#E6E0FE] to-[#F5D6FA]"
                             >
                                 Get started
