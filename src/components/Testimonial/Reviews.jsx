@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 // import { NavLink } from "react-router-dom";
 
-
 const ReviewCard = ({ name, review, rating }) => {
     return (
         <blockquote className="flex flex-col justify-between bg-white p-6 shadow-md sm:p-8 rounded-lg">
@@ -38,21 +37,18 @@ const ReviewCard = ({ name, review, rating }) => {
 const ReviewsSection = () => {
     const reviews = [
         {
-            name: "Michael Scott",
-            review:
-                "No, Rose, they are not breathing. And they have no arms or legs … Where are they? If we come across somebody with no arms or legs, do we bother resuscitating them?",
+            name: " Sarah M.",
+            review: "Our website traffic doubled after the redesign! The new site is sleek, user-friendly, and perfectly represents our brand.",
             rating: 5,
         },
         {
             name: "Pam Beesly",
-            review:
-                "I suggested we flip a coin, but Angela said she doesn't trust pennies because they're covered in germs.",
+            review: "The team's expertise in web development is unmatched. They built a custom website that perfectly met our needs and exceeded our expectations.",
             rating: 4,
         },
         {
             name: "Jim Halpert",
-            review:
-                "Bears, Beets, Battlestar Galactica.",
+            review: "We're thrilled with the results of our social media campaign. [Your Agency Name] helped us build a strong online community and connect with our target audience.",
             rating: 5,
         },
     ];
@@ -66,7 +62,8 @@ const ReviewsSection = () => {
                             Read trusted reviews from our customers
                         </h2>
                         <p className="mt-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-                            See what our customers have to say about our services.
+                            See what our customers have to say about our
+                            services.
                         </p>
                     </div>
 
