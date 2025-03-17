@@ -52,7 +52,7 @@ function Aboutus() {
                 main={false}
                 button={true}
                 buttonGIT={false}
-                link={`info`}
+                link={`contact`}
                 h1={`ABOUT US`}
                 p={`Founded in 2024, Divine Innovative is a full-service Digital Marketing and Graphic Design agency renowned for building 
                     communities and engaging target audiences in real-time through conversation-based communications. 

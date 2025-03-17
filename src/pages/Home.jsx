@@ -19,7 +19,7 @@ function Home() {
                 buttonGIT={true}
                 h1={`Your partner in creating and growing brands.`}
                 p={`We transform your ideas into reality `}
-                link={`info`}
+                link={`contact`}
                 card={true}
             />
             <Card_1 />
@@ -28,7 +28,6 @@ function Home() {
             <ReviewsSection />
             <CallToAction />
             <FAQ />
-
             <Footer />
         </>
     );
