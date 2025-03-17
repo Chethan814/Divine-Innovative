@@ -4,7 +4,7 @@ import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
 // import ContentCard from "../components/MainContent/ContentCard";
 import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
+import Info from "../components/contact/Info";
 
 import SwiftRides from "../asstes/Project/Chethan/swiftrides.png";
 import FeaturesSection from './../components/Cards/FeaturesCard';

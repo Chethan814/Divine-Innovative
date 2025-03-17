@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import ContactNav from "../../components/Info/ContectNav";
+import ContactNav from "../../components/contact/ContectNav";
 
 const GetInTouchForm = () => {
     return (

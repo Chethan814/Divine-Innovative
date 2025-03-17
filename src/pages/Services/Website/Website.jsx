@@ -5,7 +5,7 @@ import HeroSection from "../../../components/Hero/Hero";
 import "../../../styles/index.css";
 
 import ContentCard from "../../../components/MainContent/ContentCard";
-import Info from "../../../components/Info/Info";
+import Info from "../../../components/contact/Info";
 import SwiftRides from '../../../asstes/Project/Chethan/swiftrides.png'
 import DMY from '../../../asstes/Project/Chethan/DMY.jpg'
 
@@ -81,7 +81,7 @@ function Website() {
                 main={false}
                 button={true}
                 buttonGIT={true}
-                link={`info`}
+                link={`contact`}
                 h1={`WebSite`}
                 p={`Our projects are defined by a masterful combination of technology and creativity, captivating with stunning visuals, engaging content, and fluid interactions. The synergy between innovative vision and modern technology ensures a completely satisfying user experience in every web design and development solution we deliver.`}
             />
