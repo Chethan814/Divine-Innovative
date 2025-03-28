@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
-// import React from "react";
 import "../../styles/index.css";
 import GradientButton from "./Content/GradientButton";
 import HeadingPara from "./Content/HeadingPara";
 import HeroCard from "./Content/HeroCard";
 import { NavLink } from "react-router-dom";
-// import Rights from "./Content/Rights";
+import { Fade } from "react-awesome-reveal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -23,19 +22,23 @@ export default function HeroContent({ h1, main, p, buttonGIT, button, link }) {
                         main ? "-translate-x-4 sm:-translate-x-0" : " "
                     }`}
                 >
-                    <GradientButton
-                        GIT={buttonGIT}
-                        button={button}
-                        navlinks={link}
-                    />
-                    <button className="ml-5 font-[Gilroy] sm:hidden ">
-                        <NavLink to="/aboutus">
-                            Learn more
-                            <span className="pl-1  font-black text-[1rem]">
-                                <FontAwesomeIcon icon={faArrowRight} />
-                            </span>
-                        </NavLink>
-                    </button>
+                    <Fade direction="up" delay={900} triggerOnce={true} >
+                        <GradientButton
+                            GIT={buttonGIT}
+                            button={button}
+                            navlinks={link}
+                        />
+                    </Fade>
+                    <Fade direction="up" delay={1200} triggerOnce={true} >
+                        <button className="ml-5 font-[Gilroy] sm:hidden  mt-8">
+                            <NavLink to="/aboutus">
+                                Learn more
+                                <span className="pl-1  font-black text-[1rem]">
+                                    <FontAwesomeIcon icon={faArrowRight} />
+                                </span>
+                            </NavLink>
+                        </button>
+                    </Fade>
                 </div>
 
                 <HeroCard requied={main} />
