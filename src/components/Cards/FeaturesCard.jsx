@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPenNib, faHashtag } from "@fortawesome/free-solid-svg-icons";
+import { Fade } from "react-awesome-reveal";
 
 let FeaturesList = [
     {
@@ -35,23 +36,31 @@ const FeaturesSection = () => {
                     out.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {FeaturesList.map((detail) => {
+                    {FeaturesList.map((detail, index) => {
                         return (
-                            <div
-                                key={detail.title}
-                                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105"
-                            >
-                                <NavLink to={detail.link}>
-                                    <div className="text-2xl mb-2">
-                                        <FontAwesomeIcon icon={detail.icon} />
+                            <div key={index}>
+                                <Fade
+                                    cascade={false}
+                                    delay={index * 300}
+                                    direction="up"
+                                    triggerOnce={true}
+                                >
+                                    <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-105">
+                                        <NavLink to={detail.link}>
+                                            <div className="text-2xl mb-2">
+                                                <FontAwesomeIcon
+                                                    icon={detail.icon}
+                                                />
+                                            </div>
+                                            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                                                {detail.title}
+                                            </h3>
+                                            <p className="text-gray-600">
+                                                {detail.description}
+                                            </p>
+                                        </NavLink>
                                     </div>
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                                        {detail.title}
-                                    </h3>
-                                    <p className="text-gray-600">
-                                        {detail.description}
-                                    </p>
-                                </NavLink>
+                                </Fade>
                             </div>
                         );
                     })}
@@ -62,6 +71,3 @@ const FeaturesSection = () => {
 };
 
 export default FeaturesSection;
-
-
-
