@@ -2,13 +2,13 @@
 
 import HeroSection from "../components/Hero/Hero";
 import "../styles/index.css";
-import Footer from "../components/Footer/Footer";
 import Card_1 from "../components/Cards/Card_1";
 import FeaturesSection from "../components/Cards/FeaturesCard";
-import ReviewsSection from "../components/Testimonial/Reviews";
-import FAQ from "../components/Testimonial/FAQ";
-import CallToAction from "../components/CTA/CallToAction";
 import ProjectSection from "../components/Cards/Project";
+import ReviewsSection from "../components/Testimonial/Reviews";
+import CallToAction from "../components/CTA/CallToAction";
+import FAQ from "../components/Testimonial/FAQ";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
     return (
