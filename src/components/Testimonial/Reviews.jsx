@@ -3,7 +3,7 @@
 import { Fade } from "react-awesome-reveal";
 const ReviewCard = ({ name, review, rating , index }) => {
     return (
-        <Fade direction="up" cascade={false} delay={index * 300} triggerOnce={false}>
+        <Fade direction="up" cascade={false} delay={index * 500} triggerOnce={false}>
             <div className="h-full">
                 <blockquote className="flex flex-col justify-between bg-white h-full p-6 shadow-md sm:p-8 rounded-lg">
                     <div>
