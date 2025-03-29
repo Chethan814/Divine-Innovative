@@ -41,7 +41,7 @@ const FeaturesSection = () => {
                             <div key={index}>
                                 <Fade
                                     cascade={false}
-                                    delay={index * 300}
+                                    delay={index * 1000}
                                     direction="up"
                                     triggerOnce={true}
                                 >
