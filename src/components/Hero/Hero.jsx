@@ -16,15 +16,7 @@ export default function HeroSection(props) {
                     <div className=" flex flex-col justify-center items-center sm:justify-normal xl:mt-6 sm:ml-5  ">
                         <NavBar />
 
-                        <HeroContent
-                            main={props.main}
-                            button={props.button}
-                            buttonGIT={props.buttonGIT}
-                            h1={props.h1}
-                            p={props.p}
-                            link={props.link}
-                            // card={props.card}
-                        />
+                        <HeroContent {...props} />
                     </div>
                     <Minimalistic />
                 </div>

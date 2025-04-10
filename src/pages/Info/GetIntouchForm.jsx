@@ -1,7 +1,55 @@
 /* eslint-disable react/no-unescaped-entities */
 import ContactNav from "../../components/contact/ContectNav";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const GetInTouchForm = () => {
+    const { register, handleSubmit, reset } = useForm();
+    const FormLabels = [
+        {
+            label: "You name",
+            type: "text",
+            object: "Name",
+        },
+        {
+            label: "Email address",
+            type: "email",
+            object: "Email",
+        },
+        {
+            label: "Phone number",
+            type: "tel",
+            object: "Phone",
+        },
+        {
+            label: "Company name",
+            type: "text",
+            object: "Company",
+        },
+        {
+            label: "Message",
+            type: "text",
+            object: "message",
+        },
+    ];
+
+    const onSubmit = (data) => {
+        const serviceID = "service_lze38j8";
+        const templateID = "template_mbx68ut";
+        const publicKey = "qbzaNnsvbWW07Z_4h";
+
+        emailjs
+            .send(serviceID, templateID, data, publicKey)
+            .then((response) => {
+                console.log("Email sent successfully!", response);
+                alert("Message Sent Successfully!");
+                reset(); // Reset form after submission
+            })
+            .catch((error) => {
+                console.error("Error sending email:", error);
+                alert("Failed to send message.");
+            });
+    };
     return (
         <>
             <ContactNav />
@@ -49,7 +97,6 @@ const GetInTouchForm = () => {
                                     content: [
                                         "divineinnovative8@gmail.com",
                                         "ruthvikshruthvik@gmail.com",
-                                        
                                     ],
                                 },
                                 {
@@ -106,45 +153,34 @@ const GetInTouchForm = () => {
                                 <h3 className="text-3xl font-semibold text-center text-gray-900">
                                     Send us a message
                                 </h3>
-                                <form className="mt-14">
+                                <form
+                                    className="mt-14"
+                                    onSubmit={handleSubmit(onSubmit)}
+                                >
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
-                                        {[
-                                            "Your name",
-                                            "Email address",
-                                            "Phone number",
-                                            "Company name",
-                                        ].map((label, index) => (
-                                            <div key={index}>
-                                                <label className="text-base font-medium text-gray-900">
-                                                    {label}
-                                                </label>
-                                                <div className="mt-2.5 relative">
-                                                    <input
-                                                        type={
-                                                            index === 1
-                                                                ? "email"
-                                                                : index === 2
-                                                                ? "tel"
-                                                                : "text"
-                                                        }
-                                                        placeholder={`Enter your ${label.toLowerCase()}`}
-                                                        className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                                                    />
+                                        {FormLabels.map(
+                                            ({ label, object }, index) => (
+                                                <div key={index}>
+                                                    <label className="text-base font-medium text-gray-900">
+                                                        {label}
+                                                    </label>
+                                                    <div className="mt-2.5 relative">
+                                                        <input
+                                                            {...register(
+                                                                object,
+                                                                {
+                                                                    required: `${object} is required`,
+                                                                }
+                                                            )}
+                                                            placeholder={`Enter your ${label.toLowerCase()}`}
+                                                            className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                                                        />
+                                                        
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        ))}
-                                        <div className="sm:col-span-2">
-                                            <label className="text-base font-medium text-gray-900">
-                                                Message
-                                            </label>
-                                            <div className="mt-2.5 relative">
-                                                <textarea
-                                                    placeholder=""
-                                                    className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blue-600 caret-blue-600"
-                                                    rows="4"
-                                                ></textarea>
-                                            </div>
-                                        </div>
+                                            )
+                                        )}
+                                        
                                         <div className="sm:col-span-2">
                                             <button
                                                 type="submit"
